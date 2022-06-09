@@ -1,0 +1,48 @@
+{
+    "name": "wovosoft/bkb-offices",
+    "description": "Office Provider for Bangladesh Krishi Bank's Laravel Related Projects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Narayan Adhikary",
+            "email": "wovosoft@email.com",
+            "homepage": "https://wovosoft.com"
+        }
+    ],
+    "homepage": "https://github.com/wovosoft/bkb-offices",
+    "keywords": [
+        "Laravel",
+        "BkbOffices",
+        "Bangladesh Krishi Bank"
+    ],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wovosoft\\BkbOffices\\": "src/",
+            "Wovosoft\\BkbOffices\\Database\\Factories\\": "database/factories",
+            "Wovosoft\\BkbOffices\\Database\\Migrations\\": "database/migrations",
+            "Wovosoft\\BkbOffices\\Database\\Seeders\\": "database/seeders"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wovosoft\\BkbOffices\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wovosoft\\BkbOffices\\BkbOfficesServiceProvider"
+            ],
+            "aliases": {
+                "BkbOffices": "Wovosoft\\BkbOffices\\Facades\\BkbOffices"
+            }
+        }
+    }
+}
