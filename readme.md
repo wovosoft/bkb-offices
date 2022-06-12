@@ -12,11 +12,15 @@ detailed information.
 
 ## Features
 
-- List of Offices (hierarchical / tree / linear etc)
-- List of Office Types
-- Offices of a certain Office Types
-- CRUD Traits for controller: Just by plugging the traits CRUD Operation can be added.
-- Routes for CRUD Operation. Provided as Configurable Option.
+- Office List
+- Office Types
+- Office Type wise Office List
+- Datatable of Office/Office Types
+- Basic CRUD Operations of Office/Office Types
+- Options with query feature for Front-end applications, mostly for dropdowns.
+- Automatic Routes for CRUD Operations of Office/Office Types
+- Front-end Components in Blade/Vue/React/SVELTE
+- GraphQL integration
 
 ## Installation
 
@@ -28,20 +32,7 @@ composer require wovosoft/bkb-offices
 
 ## Usage
 
-### Routes
-
-Routes are configurable. By default, routes are enabled, so these are registered
-automatically.
-
-If You need to add some middleware to the routes, then you can do this by
-adding list of middleware in config file
-
-```php
-return [
-    "routes_enabled" => true,
-    "routes_middleware" => ["auth"]
-];
-```
+Check the  [detailed information here](docs/index.md)
 
 N.B.: If routes are disabled by config file, then middleware list won't work.
 
@@ -60,7 +51,6 @@ use \Wovosoft\BkbOffices\BkbOffices;
 Route::middleware(['auth','auth:sanctum'])->group(function (){
     BkbOffices::routes();
 });
-
 ```
 
 N.B.: When `BkbOffices::routes()` routes are used, the default methods provided
@@ -68,7 +58,7 @@ by traits `\Wovosoft\BkbOffices\Traits\` will be used.
 
 ## Controller actions/methods
 
-This package provides CRUD methods for Controllers by traits. 
+This package provides CRUD methods for Controllers by traits.
 You can use these traits by the example given below:
 
 ```php
@@ -83,16 +73,6 @@ class OfficeController extends Controller
     use HasOfficeCrud;
 }
 
-```
-
-## Change log
-
-Please see the [changelog](changelog.md) for more information on what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
 ```
 
 ## Contributing

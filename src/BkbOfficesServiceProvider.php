@@ -4,6 +4,8 @@ namespace Wovosoft\BkbOffices;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Wovosoft\BkbOffices\Actions\Offices;
+use Wovosoft\BkbOffices\Actions\OfficeTypes;
 use Wovosoft\BkbOffices\Commands\ImportOffices;
 
 class BkbOfficesServiceProvider extends ServiceProvider
@@ -20,7 +22,7 @@ class BkbOfficesServiceProvider extends ServiceProvider
             $this->loadViewsFrom(__DIR__ . '/../resources/views', 'wovosoft');
         }
 
-        Blade::componentNamespace("Wovosoft\\BkbOffices\\View\\Components","bkb-offices");
+        Blade::componentNamespace("Wovosoft\\BkbOffices\\View\\Components", "bkb-offices");
 
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
         if (config("bkb-offices.routes_enabled")) {
@@ -46,6 +48,16 @@ class BkbOfficesServiceProvider extends ServiceProvider
         // Register the service the package provides.
         $this->app->singleton('bkb-offices', function ($app) {
             return new BkbOffices;
+        });
+
+        //will be used in main above singleton
+        $this->app->singleton("bkb-offices:offices", function () {
+            return new Offices();
+        });
+
+        //will be used in main above singleton
+        $this->app->singleton("bkb-offices:office_types", function () {
+            return new OfficeTypes();
         });
     }
 

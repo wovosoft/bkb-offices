@@ -4,6 +4,11 @@ namespace Wovosoft\BkbOffices\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
+/**
+ * @method \Wovosoft\BkbOffices\BkbOffices offices
+ * @method \Wovosoft\BkbOffices\BkbOffices officeTypes
+ * @method void routes
+ */
 class BkbOffices extends Facade
 {
     /**

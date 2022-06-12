@@ -64,9 +64,10 @@ trait HasOfficeTypeCrud
     }
 
     /**
-     * @Route : "offices/store" as PUT Method
+     * @Route : "office_types/store" as PUT Method
      * @param Request $request
      * @return JsonResponse
+     * @throws \Throwable
      */
     public function store(Request $request): JsonResponse
     {
@@ -93,6 +94,7 @@ trait HasOfficeTypeCrud
      * @param OfficeType $officeType
      * @param Request $request
      * @return JsonResponse
+     * @throws \Throwable
      */
     public function update(OfficeType $officeType, Request $request): JsonResponse
     {
@@ -136,6 +138,7 @@ trait HasOfficeTypeCrud
      * @Route : "offices/delete/{office}" as DELETE Method
      * @param OfficeType $officeType
      * @return JsonResponse
+     * @throws \Throwable
      */
     public function destroy(OfficeType $officeType): JsonResponse
     {
@@ -172,7 +175,13 @@ trait HasOfficeTypeCrud
             ->get();
     }
 
-    public function offices(OfficeType $officeType, Request $request)
+    /**
+     * Returns Offices of a certain OfficeType
+     * @param OfficeType $officeType
+     * @param Request $request
+     * @return Collection
+     */
+    public function offices(OfficeType $officeType, Request $request): Collection
     {
         return $officeType
             ->offices()

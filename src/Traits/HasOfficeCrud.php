@@ -61,6 +61,7 @@ trait HasOfficeCrud
      * @Route : "offices/store" as PUT Method
      * @param Request $request
      * @return JsonResponse
+     * @throws \Throwable
      */
     public function store(Request $request): JsonResponse
     {
@@ -87,6 +88,7 @@ trait HasOfficeCrud
      * @param Office $office
      * @param Request $request
      * @return JsonResponse
+     * @throws \Throwable
      */
     public function update(Office $office, Request $request): JsonResponse
     {
@@ -108,6 +110,7 @@ trait HasOfficeCrud
     }
 
     /**
+     * Data Pagination
      * $request can contain pagination variables as
      * ['per_page'=> int,'columns' => array,'page_name' => string,'page'=> int]
      * @param Request $request
@@ -130,6 +133,7 @@ trait HasOfficeCrud
      * @Route : "offices/delete/{office}" as DELETE Method
      * @param Office $office
      * @return JsonResponse
+     * @throws \Throwable
      */
     public function destroy(Office $office): JsonResponse
     {
