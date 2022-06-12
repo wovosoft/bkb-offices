@@ -84,6 +84,19 @@ private array $formValidations = [
 ])
 ```
 
+###  Datatable
+
+```php
+/**
+* Data Pagination
+* $request can contain pagination variables as
+* ['per_page'=> int,'columns' => array,'page_name' => string,'page'=> int]
+* @param Request $request
+* @return LengthAwarePaginator
+*/
+public function index(Request $request): LengthAwarePaginator
+```
+
 This method is used to generate datatables. To control the datatable provide following data along with form data
 
 ```js
@@ -99,21 +112,7 @@ axios.post('route/to/index', {
 });
 ```
 
-```php
-/**
-* Data Pagination
-* $request can contain pagination variables as
-* ['per_page'=> int,'columns' => array,'page_name' => string,'page'=> int]
-* @param Request $request
-* @return LengthAwarePaginator
-*/
-public function index(Request $request): LengthAwarePaginator
-```
-
-This method is used to destroy an Office Record from database. Recommended method is DELETE.
-N.B.: Delete method is a preflight method. This methods first auto resolves the Office Model,
-then deletes it. This is because if it gets deleted by Office::destroy(id), then deleting, delete, deleted
-etc. model events won't be triggered. So, it's always better to first resolve the model, then delete it.
+### Deleting a record
 
 ```php
 /**
@@ -127,7 +126,13 @@ etc. model events won't be triggered. So, it's always better to first resolve th
 public function destroy(Office $office): JsonResponse
 ```
 
-This method is used to retrieve list of records as dropdowns value.
+This method is used to destroy an Office Record from database. Recommended method is DELETE.
+N.B.: Delete method is a preflight method. This methods first auto resolves the Office Model,
+then deletes it. This is because if it gets deleted by Office::destroy(id), then deleting, delete, deleted
+etc. model events won't be triggered. So, it's always better to first resolve the model, then delete it.
+
+
+### Records as options
 
 ```php
 /**
@@ -139,6 +144,9 @@ This method is used to retrieve list of records as dropdowns value.
 */
 public function options(Request $request): Collection|array
 ```
+
+This method is used to retrieve list of records as dropdowns value.
+
 
 ### Changing column selection in options
 
@@ -190,7 +198,7 @@ private function optionsQuery(Builder $builder, string $filter): Builder
 
    **Working on this.**
 
-## Routes registration
+### Routes registration
 
 If `config('bkb-offices.routes_enabled')` is set to `true`, then routes will be registered automatically.
 But in case you need to register the routes manually follow the example given below:
@@ -232,7 +240,7 @@ class OfficeController extends \App\Http\Controllers\Controller{
 }
 ```
 
-## Something to be Noted
+### Something to be Noted
 
 Generally, Office actions are provided by a singleton, but if you need a new instance, then pass `true` as
 parameter. 
