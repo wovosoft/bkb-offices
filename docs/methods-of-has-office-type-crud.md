@@ -86,6 +86,8 @@ axios.post('route/to/index', {
 });
 ```
 
+### Datatable
+
 ```php
 /**
 * Data Pagination
@@ -97,10 +99,7 @@ axios.post('route/to/index', {
 public function index(Request $request): LengthAwarePaginator
 ```
 
-This method is used to destroy an Office Record from database. Recommended method is DELETE.
-N.B.: Delete method is a preflight method. This methods first auto resolves the Office Model,
-then deletes it. This is because if it gets deleted by Office::destroy(id), then deleting, delete, deleted
-etc. model events won't be triggered. So, it's always better to first resolve the model, then delete it.
+## Destroy a record
 
 ```php
 /**
@@ -114,7 +113,13 @@ etc. model events won't be triggered. So, it's always better to first resolve th
 public function destroy(OfficeType $officeType): JsonResponse
 ```
 
-This method is used to retrieve list of records as dropdowns value.
+This method is used to destroy an Office Type Record from database. Recommended method is DELETE.
+N.B.: Delete method is a preflight method. This methods first auto resolves the `OfficeType` Model,
+then deletes it. This is because if it get's deleted by `OfficeType::destroy(id)`, then deleting, delete, deleted
+etc. model events won't be triggered. So, it's always better to first resolve the model, then delete it.
+
+
+## Retrieving records as queryable options
 
 ```php
 /**
@@ -126,6 +131,9 @@ This method is used to retrieve list of records as dropdowns value.
 */
 public function options(Request $request): Collection|array
 ```
+
+This method is used to retrieve list of records as dropdowns value.
+
 
 ### Changing column selection in options
 
