@@ -2,6 +2,7 @@
 
 namespace Wovosoft\BkbOffices;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Wovosoft\BkbOffices\Commands\ImportOffices;
 
@@ -19,6 +20,7 @@ class BkbOfficesServiceProvider extends ServiceProvider
             $this->loadViewsFrom(__DIR__ . '/../resources/views', 'wovosoft');
         }
 
+        Blade::componentNamespace("Wovosoft\\BkbOffices\\View\\Components","bkb-offices");
 
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
         if (config("bkb-offices.routes_enabled")) {

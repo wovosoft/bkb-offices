@@ -18,8 +18,10 @@ class BkbOffices
      * @param array $cols
      * @param array $with
      * @param array $appends
-     * @return Collection|array
+     * @return \Illuminate\Database\Eloquent\Collection|array
+     * @static
      */
+
     public function list(array $cols = ['*'], array $with = [], array $appends = []): Collection|array
     {
         return Office::query()
