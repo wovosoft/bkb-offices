@@ -38,6 +38,7 @@ class BkbOffices
 
     /*
      * Registers default CRUD Routes
+     * These routes are wrapped by the default middlewares defined in config('bkb-offices.routes_middleware')
      * @return void
      */
     public static function routes(): void

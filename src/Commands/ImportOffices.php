@@ -15,7 +15,7 @@ class ImportOffices extends Command
      *
      * @var string
      */
-    protected $signature = 'import:offices';
+    protected $signature = 'bkb-offices:import';
 
     /**
      * The console command description.
@@ -116,6 +116,8 @@ class ImportOffices extends Command
                 }
             }
         }
+        $this->input("Divisional Offices, CRM-RM Offices & Branches Imported");
+
         $daos = json_decode(File::get(base_path("packages/wovosoft/bkb-offices/assets/audit_offices.json")));
         foreach ($daos as $dao) {
             $daoOffice = (new Office());
@@ -143,6 +145,8 @@ class ImportOffices extends Command
             }
         }
 
+        $this->info("Divisional Audit & Regional Audit Offices Imported");
+
         $hos = json_decode(File::get(base_path("packages/wovosoft/bkb-offices/assets/head_offices.json")));
         foreach ($hos as $ho) {
             (new Office())->forceFill([
@@ -153,6 +157,7 @@ class ImportOffices extends Command
                 "type" => OfficeTypes::HeadOffice
             ])->saveOrFail();
         }
+        $this->info("Head Offices Imported");
         return 0;
     }
 }
