@@ -11,7 +11,9 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\Rules\Enum;
 use Symfony\Component\Routing\Annotation\Route;
+use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Models\OfficeType;
 
 trait HasOfficeTypeCrud
@@ -31,11 +33,18 @@ trait HasOfficeTypeCrud
      * Form Submit Validation Rules for store/update Operation
      * @var array|\string[][]
      */
-    private array $formValidations = [
-        "name" => ["required", "string"],
-        "bn_name" => ["nullable", "string"],
-        "description" => ["nullable", "string"]
-    ];
+    private array $formValidations;
+
+    public function __construct()
+    {
+        $this->formValidations = [
+            "name" => ["required", "string"],
+            "bn_name" => ["nullable", "string"],
+            "description" => ["nullable", "string"],
+            "type" => ["required", new Enum(OfficeTypes::class)],
+        ];
+    }
+
 
     /**
      * If needed to modify options, just modify this method.
@@ -124,6 +133,11 @@ trait HasOfficeTypeCrud
     public function index(Request $request): LengthAwarePaginator
     {
         return OfficeType::query()
+            ->when($request->input("filter"), function (Builder $builder, string $filter) {
+                $builder->where("id", $filter)
+                    ->orWhere("name", "like", "%$filter%")
+                    ->orWhere("bn_name", "like", "%$filter%");
+            })
             ->paginate(
                 perPage: $request->input("per_page") ?? 15,
                 columns: $request->input("columns") ?? ['*'],

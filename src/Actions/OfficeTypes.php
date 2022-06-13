@@ -2,11 +2,15 @@
 
 namespace Wovosoft\BkbOffices\Actions;
 
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
+use Wovosoft\BkbOffices\Models\OfficeType;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeCrud;
 
 class OfficeTypes
 {
     use HasOfficeTypeCrud;
+
     /**
      * Sets default column selection for options
      * @param array $cols
@@ -28,8 +32,18 @@ class OfficeTypes
         $this->formValidations = $rules;
         return $this;
     }
+
     /**
-     * Now, rest of the CRUD methods are available. Those can be used like used in controllers
-     * method optionsQuery of HasOfficeCrud can be overwritten
+     * Returns the Builder/List of OfficeTypes
+     * @param bool $getBuilder
+     * @return Collection|array|Builder|OfficeType
      */
+    public function list(bool $getBuilder = false): Collection|array|Builder|OfficeType
+    {
+        $builder = OfficeType::query();
+        if (!$getBuilder) {
+            return $builder->get();
+        }
+        return $builder;
+    }
 }

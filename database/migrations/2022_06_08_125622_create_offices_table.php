@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Wovosoft\BkbOffices\Enums\OfficeTypes;
 
 return new class extends Migration {
     /**
@@ -26,7 +27,9 @@ return new class extends Migration {
              * aliasing: office_id => parent_id
              */
             $table->unsignedBigInteger("parent_id")->nullable();
-            $table->unsignedBigInteger("office_type_id")->nullable();
+            $table->string("type")
+                ->nullable()
+                ->comment("Type of " . OfficeTypes::class);
             $table->timestamps();
         });
     }

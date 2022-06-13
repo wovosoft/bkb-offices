@@ -85,7 +85,7 @@ If you discover any security related issues, please email author@email.com inste
 
 ## Credits
 
-- [Narayan Adhikary][https://github.com/wovosoft]
+- [Narayan Adhikary](https://github.com/wovosoft)
 - [All Contributors][link-contributors]
 
 ## License

@@ -1,7 +1,4 @@
 <?php
-/**
- * This trait should be used in Controllers only, which will manage CRUD Operation of Offices
- */
 
 namespace Wovosoft\BkbOffices\Traits;
 
@@ -11,7 +8,9 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\Rules\Enum;
 use Symfony\Component\Routing\Annotation\Route;
+use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Models\Office;
 
 trait HasOfficeCrud
@@ -28,17 +27,22 @@ trait HasOfficeCrud
      * Form Submit Validation Rules for store/update Operation
      * @var array|\string[][]
      */
-    private array $formValidations = [
-        "name" => ["required", "string"],
-        "bn_name" => ["nullable", "string"],
-        "code" => ["nullable", "string"],
-        "address" => ["nullable", "string"],
-        "recommended_manpower" => ["nullable", "numeric"],
-        "current_manpower" => ["nullable", "numeric"],
-        "description" => ["nullable", "string"],
-        "parent_id" => ["nullable", "numeric"],
-        "office_type_id" => ["nullable", "numeric"],
-    ];
+    private array $formValidations;
+
+    public function __construct()
+    {
+        $this->formValidations = [
+            "name" => ["required", "string"],
+            "bn_name" => ["nullable", "string"],
+            "code" => ["nullable", "string"],
+            "address" => ["nullable", "string"],
+            "recommended_manpower" => ["nullable", "numeric"],
+            "current_manpower" => ["nullable", "numeric"],
+            "description" => ["nullable", "string"],
+            "parent_id" => ["nullable", "numeric"],
+            "type" => ["nullable", new Enum(OfficeTypes::class)],
+        ];
+    }
 
     /**
      * If needed to modify options, just modify this method.
@@ -119,6 +123,15 @@ trait HasOfficeCrud
     public function index(Request $request): LengthAwarePaginator
     {
         return Office::query()
+            ->when($request->input("type"), function (Builder $builder, string|OfficeTypes $type) {
+                $builder->where("type", $type);
+            })
+            ->when($request->input("filter"), function (Builder $builder, string $filter) {
+                $builder->where("id", "=", $filter)
+                    ->orWhere("name", "like", "%$filter%")
+                    ->orWhere("code", "like", "%$filter%")
+                    ->orWhere("bn_name", "like", "%$filter%");
+            })
             ->paginate(
                 perPage: $request->input("per_page") ?? 15,
                 columns: $request->input("columns") ?? ['*'],

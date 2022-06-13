@@ -18,7 +18,9 @@ return new class extends Migration {
             $table->string("name");
             $table->string("bn_name")->nullable();
             $table->string("description")->nullable();
-            $table->string("type")->comment("Type of " . OfficeTypes::class);
+            $table->enum("type", array_map(fn($item) => $item->value, OfficeTypes::cases()))
+                ->unique()
+                ->comment("Type of " . OfficeTypes::class);
             $table->timestamps();
         });
     }

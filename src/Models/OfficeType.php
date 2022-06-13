@@ -42,7 +42,7 @@ class OfficeType extends Model
 
     public function offices(): HasMany
     {
-        return $this->hasMany(Office::class);
+        return $this->hasMany(Office::class, "type", "type");
     }
 
     public function isBranch(): Attribute

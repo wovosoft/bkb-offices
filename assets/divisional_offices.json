@@ -17938,5 +17938,18 @@
                 ]
             }
         ]
+    },
+    {
+        "id": 10,
+        "name": "HEAD OFFICE",
+        "bn_name": null,
+        "code": "HEADOFFICE",
+        "division": null,
+        "contact": null,
+        "address": "HEAD OFFICE",
+        "created_at": "2021-08-05T17:04:47.000000Z",
+        "updated_at": "2021-08-05T17:04:47.000000Z",
+        "recommended_manpower_quantity": 0,
+        "crm_offices": []
     }
 ]

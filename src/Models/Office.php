@@ -2,10 +2,12 @@
 
 namespace Wovosoft\BkbOffices\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Wovosoft\BkbOffices\Enums\OfficeTypes;
 
 /**
  * Wovosoft\BkbOffices\Models\Office
@@ -38,19 +40,34 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @method static \Illuminate\Database\Eloquent\Builder|Office whereParentId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Office whereRecommendedManpower($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Office whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Office divisionalOffices(\Illuminate\Database\Eloquent\Builder $builder)
  * @mixin \Eloquent
  */
 class Office extends Model
 {
     use HasFactory;
 
-    public function type(): BelongsTo
+    protected $casts = [
+        "type" => OfficeTypes::class
+    ];
+
+    /**
+     * Returns the model of OfficeType by type key
+     * @return BelongsTo
+     */
+    public function typeOf(): BelongsTo
     {
-        return $this->belongsTo(OfficeType::class);
+        return $this->belongsTo(OfficeType::class, "type", "type");
     }
 
     public function contacts(): HasMany
     {
         return $this->hasMany(Contact::class);
     }
+
+    public function scopeOfType(Builder $builder, OfficeTypes|string $type): Builder
+    {
+        return $builder->where("type", '=', $type);
+    }
 }
+

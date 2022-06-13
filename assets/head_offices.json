@@ -1,0 +1,177 @@
+[
+    {
+        "name": "Audit Department",
+        "bn_name": "নিরীক্ষা বিভাগ",
+        "type": "ho",
+        "phone": "88-02-9568117",
+        "email": "dgmaudit@krishibank.org.bd"
+    },
+    {
+        "name": "Board Secretariat",
+        "bn_name": "পর্ষদ সচিবালয় বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223388082",
+        "email": "dgmboard@krishibank.org.bd"
+    },
+    {
+        "name": "Branches Control and Business Development Department",
+        "bn_name": "শাখা নিয়ন্ত্রণ ও ব্যবসা উন্নয়ন বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223354025",
+        "email": "dgmbcbd@krishibank.org.bd"
+    },
+    {
+        "name": "Budget & Expenditure Control Department",
+        "bn_name": "বাজেট ও ব্যয় নিয়ন্ত্রণ বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223389121",
+        "email": "dgmbudget@krishibank.org.bd"
+    },
+    {
+        "name": "Central Accounts Department",
+        "bn_name": "কেন্দ্রীয় হিসাব বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223386931, 88-02-223384701",
+        "email": "dgmaccounts1@krishibank.org.bd, dgmaccounts2@krishibank.org.bd"
+    },
+    {
+        "name": "Compliance Department",
+        "bn_name": "পরিপালন বিভাগ",
+        "type": "ho",
+        "phone": " 88-02-223382524",
+        "email": "dgmcompliance@krishibank.org.bd"
+    },
+    {
+        "name": "Credit Department",
+        "bn_name": "ক্রেডিট বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223388949, 88-02-47123094",
+        "email": "dgmlad1@krishibank.org.bd, dgmlad2@krishibank.org.bd, dgmsme@krishibank.org.bd, dgmpid@krishibank.org.bd, dgmppd@krishibank.org.bd"
+    },
+    {
+        "name": "Estate & Engineering Department",
+        "bn_name": "এস্টেট এন্ড ইঞ্জিনিয়ারিং বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223352377",
+        "email": "dgmengineering@krishibank.org.bd"
+    },
+    {
+        "name": "Foreign Remittance Management Department",
+        "bn_name": "ফরেন রেমিট্যান্স ম্যানেজমেন্ট বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223388109",
+        "email": "dgmfrmd@krishibank.org.bd"
+    },
+    {
+        "name": "Human Resource Management Department -1",
+        "bn_name": "হিউম্যান রিসোর্স ম্যানেজমেন্ট  বিভাগ-১",
+        "type": "ho",
+        "phone": "88-02-223383637, 88-02-223386911, 88-02-223381607",
+        "email": "dgmpd1@krishibank.org.bd, dgmpd2@krishibank.org.bd, dgmonm@krishibank.org.bd"
+    },
+    {
+        "name": "Human Resource Management Department -2",
+        "bn_name": "হিউম্যান রিসোর্স ম্যানেজমেন্ট  বিভাগ-২",
+        "type": "ho",
+        "phone": "88-02-223382701, 88-02-223350880",
+        "email": "dgmpd3@krishibank.org.bd, dgmhrd@krishibank.org.bd"
+    },
+    {
+        "name": "ICT Operation Department",
+        "bn_name": "আইসিটি অপারেশন বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223385559",
+        "email": "dgmictop@krishibank.org.bd"
+    },
+    {
+        "name": "ICT Systems, Card & Mobile Banking Department",
+        "bn_name": "আইসিটি সিস্টেমস, কার্ড ও মোবাইল ব্যাংকিং বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223356653",
+        "email": "dgmictsystem@krishibank.org.bd"
+    },
+    {
+        "name": "International Trade Department",
+        "bn_name": "আন্তর্জাতিক বাণিজ্য বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223380563",
+        "email": "dgmtrade@krishibank.org.bd"
+    },
+    {
+        "name": "Law Department",
+        "bn_name": "আইন বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223384487",
+        "email": "dgmlaw@krishibank.org.bd"
+    },
+    {
+        "name": "Loan Classification Department",
+        "bn_name": "ঋণ শ্রেণিবিন্যাস বিভাগ",
+        "type": "ho",
+        "phone": "88-02-9514912",
+        "email": "dgmlcd@krishibank.org.bd"
+    },
+    {
+        "name": "Loan Recovery Department",
+        "bn_name": "ঋণ আদায় বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223383165",
+        "email": "dgmpmd@krishibank.org.bd, dgmrecovery@krishibank.org.bd"
+    },
+    {
+        "name": "Monitoring Department",
+        "bn_name": "পরিধারণ  বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223380505",
+        "email": "dgmmonitoring@krishibank.org.bd"
+    },
+    {
+        "name": "Procurement & Employee Welfare & Transport Department",
+        "bn_name": "প্রকিউরমেন্ট, কর্মী কল্যাণ ও পরিবহন বিভাগ",
+        "type": "ho",
+        "phone": "88-02- 223383535,",
+        "email": "dgmcsd@krishibank.org.bd, dgmewt@krishibank.org.bd"
+    },
+    {
+        "name": "Public Relations and Protocol Department",
+        "bn_name": "জনসংযোগ ও প্রটোকল বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223384414",
+        "email": "cpro@krishibank.org.bd"
+    },
+    {
+        "name": "Reconciliation Department",
+        "bn_name": "হিসাব সমন্বয় বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223383906",
+        "email": "dgmrecon@krishibank.org.bd"
+    },
+    {
+        "name": "Research & Statistics Department",
+        "bn_name": "গবেষণা ও পরিসংখ্যান  বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223351606",
+        "email": "dgmrsd@krishibank.org.bd"
+    },
+    {
+        "name": "Risk Management Department",
+        "bn_name": "ঝুঁকি ব্যবস্থাপনা বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223384486",
+        "email": "dgmrmd@krishibank.org.bd"
+    },
+    {
+        "name": "Treasury Management Department",
+        "bn_name": "ট্রেজারী ম্যানেজমেন্ট বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223355622",
+        "email": "dgmtreasury@krishibank.org.bd"
+    },
+    {
+        "name": "Vigilance Squad Department",
+        "bn_name": "ভিজিলেন্স স্কোয়াড বিভাগ",
+        "type": "ho",
+        "phone": "88-02-223380036",
+        "email": "dgmvsd@krishibank.org.bd"
+    }
+]

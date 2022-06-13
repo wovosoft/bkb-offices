@@ -32,28 +32,51 @@ class ImportOffices extends Command
      */
     public function handle(): int
     {
+        $types = [
+            [
+                "name" => "Divisional Office",
+                "bn_name" => "বিভাগীয় কার্যালয়",
+                "type" => OfficeTypes::DivisionalOffice
+            ],
+            [
+                "name" => "CRM/RM Office",
+                "bn_name" => "মুখ্য আঞ্চলিক / আঞ্চলিক কার্যালয়",
+                "type" => OfficeTypes::CRM_RMOffice
+            ],
+            [
+                "name" => "Branch",
+                "bn_name" => "শাখা",
+                "type" => OfficeTypes::Branch
+            ],
+            [
+                "name" => "Divisional Audit Office",
+                "bn_name" => "বিভাগীয় নিরীক্ষা কার্যালয়",
+                "type" => OfficeTypes::DivisionalAuditOffice
+            ],
+            [
+                "name" => "Regional Audit Office",
+                "bn_name" => "আঞ্চলিক নিরীক্ষা কার্যালয়",
+                "type" => OfficeTypes::RegionalAuditOffice
+            ],
+            [
+                "name" => "Corporate Branch",
+                "bn_name" => "কর্পোরেট শাখা",
+                "type" => OfficeTypes::CorporateBranch
+            ],
+            [
+                "name" => "Head Office",
+                "bn_name" => "প্রধান কার্যালয়",
+                "type" => OfficeTypes::HeadOffice
+            ]
+        ];
+
+        foreach ($types as $type) {
+            $ot = new OfficeType();
+            $ot->forceFill($type)->saveOrFail();
+        }
+
         $dos = json_decode(File::get(base_path("packages/wovosoft/bkb-offices/assets/divisional_offices.json")));
 
-        $doType = new  OfficeType();
-        $doType->forceFill([
-            "name" => "Divisional Office",
-            "bn_name" => "বিভাগীয় কার্যালয়",
-            "type" => OfficeTypes::DivisionalOffice
-        ])->saveOrFail();
-
-        $crType = new OfficeType();
-        $crType->forceFill([
-            "name" => "CRM/RM Office",
-            "bn_name" => "মুখ্য আঞ্চলিক / আঞ্চলিক কার্যালয়",
-            "type" => OfficeTypes::CRM_RMOffice
-        ])->saveOrFail();
-
-        $brType = new OfficeType();
-        $brType->forceFill([
-            "name" => "Branch",
-            "bn_name" => "শাখা",
-            "type" => OfficeTypes::Branch
-        ])->saveOrFail();
 
         foreach ($dos as $do) {
             $doOffice = (new Office());
@@ -64,8 +87,9 @@ class ImportOffices extends Command
                 "address" => $do->address ?? null,
                 "recommended_manpower" => $do->recommended_manpower_quantity ?? null,
                 "description" => $do->division ?? null,
-                "office_type_id" => $doType->id
+                "type" => OfficeTypes::DivisionalOffice
             ])->saveOrFail();
+
             foreach ($do->crm_offices as $crm_office) {
                 $croOffice = new Office();
                 $croOffice->forceFill([
@@ -75,7 +99,7 @@ class ImportOffices extends Command
                     "address" => $crm_office->address ?? null,
                     "recommended_manpower" => $crm_office->recommended_manpower_quantity ?? null,
                     "description" => $crm_office->division ?? null,
-                    "office_type_id" => $crType->id,
+                    "type" => OfficeTypes::CRM_RMOffice,
                     "parent_id" => $doOffice->id
                 ])->saveOrFail();
                 foreach ($crm_office->branches as $branch) {
@@ -86,11 +110,48 @@ class ImportOffices extends Command
                         "code" => $branch->branch_code ?? null,
                         "address" => $branch->address ?? null,
                         "recommended_manpower" => $branch->recommended_manpower_quantity ?? null,
-                        "office_type_id" => $brType->id,
+                        "type" => OfficeTypes::Branch,
                         "parent_id" => $croOffice->id
                     ])->saveOrFail();
                 }
             }
+        }
+        $daos = json_decode(File::get(base_path("packages/wovosoft/bkb-offices/assets/audit_offices.json")));
+        foreach ($daos as $dao) {
+            $daoOffice = (new Office());
+            $daoOffice->forceFill([
+                "name" => $dao->name,
+                "bn_name" => $dao->bn_name ?? null,
+                "code" => $dao->code ?? null,
+                "address" => $dao->address ?? null,
+                "recommended_manpower" => $dao->recommended_manpower_quantity ?? null,
+                "description" => $dao->division ?? null,
+                "type" => OfficeTypes::DivisionalAuditOffice
+            ])->saveOrFail();
+            foreach ($dao->regional_audit_offices as $rao) {
+                $rao_office = new Office();
+                $rao_office->forceFill([
+                    "name" => $rao->name,
+                    "bn_name" => $rao->bn_name ?? null,
+                    "code" => $rao->code ?? null,
+                    "address" => $rao->address ?? null,
+                    "recommended_manpower" => $rao->recommended_manpower_quantity ?? null,
+                    "description" => $rao->division ?? null,
+                    "type" => OfficeTypes::RegionalAuditOffice,
+                    "parent_id" => $daoOffice->id
+                ])->saveOrFail();
+            }
+        }
+
+        $hos = json_decode(File::get(base_path("packages/wovosoft/bkb-offices/assets/head_offices.json")));
+        foreach ($hos as $ho) {
+            (new Office())->forceFill([
+                "name" => $ho->name,
+                "bn_name" => $ho->bn_name ?? null,
+                "code" => $ho->code ?? null,
+                "address" => $ho->address ?? null,
+                "type" => OfficeTypes::HeadOffice
+            ])->saveOrFail();
         }
         return 0;
     }
