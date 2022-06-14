@@ -5,11 +5,13 @@ namespace Wovosoft\BkbOffices\Models;
 use Illuminate\Database\Eloquent\Model;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Models\Scopes\HeadOffices;
+use Wovosoft\BkbOffices\Traits\HasOfficeSearchable;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
 class HeadOffice extends Model
 {
     use HasOfficeTypeConditions;
+    use HasOfficeSearchable;
 
     protected $table = "offices";
     protected $casts = [

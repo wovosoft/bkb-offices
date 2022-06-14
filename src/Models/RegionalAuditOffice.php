@@ -6,11 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Models\Scopes\RegionalAuditOffices;
+use Wovosoft\BkbOffices\Traits\HasOfficeSearchable;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
 class RegionalAuditOffice extends Model
 {
     use HasOfficeTypeConditions;
+    use HasOfficeSearchable;
 
     protected $table = "offices";
     protected $casts = [

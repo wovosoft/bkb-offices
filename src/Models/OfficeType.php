@@ -5,6 +5,7 @@ namespace Wovosoft\BkbOffices\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Laravel\Scout\Searchable;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
@@ -36,10 +37,20 @@ class OfficeType extends Model
 {
     use HasFactory;
     use HasOfficeTypeConditions;
+    use Searchable;
 
     protected $casts = [
         "type" => OfficeTypes::class
     ];
+
+    public function toSearchableArray(): array
+    {
+        return [
+            "id" => $this->id,
+            "name" => $this->name,
+            "bn_name" => $this->bn_name
+        ];
+    }
 
     public function offices(): HasMany
     {

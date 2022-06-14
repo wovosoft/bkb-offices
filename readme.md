@@ -32,48 +32,7 @@ composer require wovosoft/bkb-offices
 
 ## Usage
 
-Check the  [detailed information here](docs/index.md)
-
-N.B.: If routes are disabled by config file, then middleware list won't work.
-
-Another methods of registering routes manually is:
-
-```php
-\Wovosoft\BkbOffices\BkbOffices::routes();
-```
-
-Now, if you want to group these routes, then just follow the below example.
-
-```php
-use \Illuminate\Support\Facades\Route;
-use \Wovosoft\BkbOffices\BkbOffices;
-
-Route::middleware(['auth','auth:sanctum'])->group(function (){
-    BkbOffices::routes();
-});
-```
-
-N.B.: When `BkbOffices::routes()` routes are used, the default methods provided
-by traits `\Wovosoft\BkbOffices\Traits\` will be used.
-
-## Controller actions/methods
-
-This package provides CRUD methods for Controllers by traits.
-You can use these traits by the example given below:
-
-```php
-namespace Wovosoft\BkbOffices\Controllers;
-
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Wovosoft\BkbOffices\Traits\HasOfficeCrud;
-
-class OfficeController extends Controller
-{
-    use HasOfficeCrud;
-}
-
-```
+Check the  [detailed information here](https://bkb-offices.vercel.app/)
 
 ## Contributing
 

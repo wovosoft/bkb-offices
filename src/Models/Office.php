@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
+use Wovosoft\BkbOffices\Traits\HasOfficeSearchable;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
 /**
@@ -48,6 +49,7 @@ class Office extends Model
 {
     use HasFactory;
     use HasOfficeTypeConditions;
+    use HasOfficeSearchable;
 
     protected $casts = [
         "type" => OfficeTypes::class

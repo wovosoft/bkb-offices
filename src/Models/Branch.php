@@ -7,11 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Models\Scopes\Branches;
+use Wovosoft\BkbOffices\Traits\HasOfficeSearchable;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
 class Branch extends Model
 {
     use HasOfficeTypeConditions;
+    use HasOfficeSearchable;
 
     protected $table = "offices";
     protected $casts = [
@@ -27,6 +29,7 @@ class Branch extends Model
     {
         static::addGlobalScope(new Branches);
     }
+
 
     public function crmRmOffice(): BelongsTo
     {

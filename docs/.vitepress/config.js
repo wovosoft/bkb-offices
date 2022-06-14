@@ -26,6 +26,7 @@ export default {
                 items: [
                     {text: 'Theory', link: '/theory'},
                     {text: 'Office Types', link: '/office-types'},
+                    {text: 'Searching Models', link: '/searching-models'},
                 ]
             },
             {
