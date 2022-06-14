@@ -1,4 +1,5 @@
 export default {
+    base: "bkb-offices",
     title: 'BKB Office Provider',
     description: 'Provides List of Offices, Office Types of Laravel Related Projects of Bangladesh Krishi Bank',
     themeConfig: {
