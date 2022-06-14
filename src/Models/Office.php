@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
+use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
 /**
  * Wovosoft\BkbOffices\Models\Office
@@ -46,6 +47,7 @@ use Wovosoft\BkbOffices\Enums\OfficeTypes;
 class Office extends Model
 {
     use HasFactory;
+    use HasOfficeTypeConditions;
 
     protected $casts = [
         "type" => OfficeTypes::class
@@ -68,6 +70,16 @@ class Office extends Model
     public function scopeOfType(Builder $builder, OfficeTypes|string $type): Builder
     {
         return $builder->where("type", '=', $type);
+    }
+
+    public function children(): HasMany
+    {
+        return $this->hasMany(static::class, 'parent_id');
+    }
+
+    public function parent(): BelongsTo
+    {
+        return $this->belongsTo(static::class, 'parent_id');
     }
 }
 

@@ -1,0 +1,36 @@
+{
+    "name": "bkb-offices",
+    "version": "1.0.0",
+    "description": "Office Provider Laravel Package of Bangladesh Krishi Bank",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wovosoft/bkb-offices.git"
+    },
+    "keywords": [
+        "BKB",
+        "Offices",
+        "Bangladesh",
+        "Krishi",
+        "Bank",
+        "Laravel"
+    ],
+    "author": "Narayan Adhikary",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/wovosoft/bkb-offices/issues"
+    },
+    "homepage": "https://github.com/wovosoft/bkb-offices#readme",
+    "devDependencies": {
+        "vitepress": "^1.0.0-alpha.1",
+        "vue": "^3.2.37"
+    },
+    "scripts": {
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:serve": "vitepress serve docs"
+    }
+}
