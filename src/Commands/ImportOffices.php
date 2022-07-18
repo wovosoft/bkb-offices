@@ -116,7 +116,7 @@ class ImportOffices extends Command
                 }
             }
         }
-        $this->input("Divisional Offices, CRM-RM Offices & Branches Imported");
+        $this->info("Divisional Offices, CRM-RM Offices & Branches Imported");
 
         $daos = json_decode(File::get(realpath(__DIR__ . "/../../assets/audit_offices.json")));
         foreach ($daos as $dao) {
