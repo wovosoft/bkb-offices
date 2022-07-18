@@ -75,7 +75,7 @@ class ImportOffices extends Command
             $ot->forceFill($type)->saveOrFail();
         }
 
-        $dos = json_decode(File::get(base_path("packages/wovosoft/bkb-offices/assets/divisional_offices.json")));
+        $dos = json_decode(File::get(realpath(__DIR__ . "/../../assets/divisional_offices.json")));
 
 
         foreach ($dos as $do) {
@@ -118,7 +118,7 @@ class ImportOffices extends Command
         }
         $this->input("Divisional Offices, CRM-RM Offices & Branches Imported");
 
-        $daos = json_decode(File::get(base_path("packages/wovosoft/bkb-offices/assets/audit_offices.json")));
+        $daos = json_decode(File::get(realpath(__DIR__ . "/../../assets/audit_offices.json")));
         foreach ($daos as $dao) {
             $daoOffice = (new Office());
             $daoOffice->forceFill([
@@ -147,7 +147,7 @@ class ImportOffices extends Command
 
         $this->info("Divisional Audit & Regional Audit Offices Imported");
 
-        $hos = json_decode(File::get(base_path("packages/wovosoft/bkb-offices/assets/head_offices.json")));
+        $hos = json_decode(File::get(realpath(__DIR__ . "/../../assets/head_offices.json")));
         foreach ($hos as $ho) {
             (new Office())->forceFill([
                 "name" => $ho->name,
