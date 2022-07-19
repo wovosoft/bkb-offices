@@ -123,6 +123,7 @@ trait HasOfficeCrud
     public function index(Request $request): LengthAwarePaginator
     {
         return Office::query()
+            ->with(['parent'])
             ->when($request->input("type"), function (Builder $builder, string|OfficeTypes $type) {
                 $builder->where("type", $type);
             })
