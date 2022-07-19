@@ -50,7 +50,7 @@ class BkbOffices
                 Route::put("store", "store")->name("store");
                 Route::put("update/{office}", "update")->name("update");
                 Route::post("/", "index")->name("index");
-                Route::delete("/delete/{office}", "delete")->name("delete");
+                Route::delete("/delete/{office}", "destroy")->name("delete");
                 Route::post("/options", "options")->name("options");
             });
 
@@ -61,7 +61,7 @@ class BkbOffices
                 Route::put("store", "store")->name("store");
                 Route::put("update/{office}", "update")->name("update");
                 Route::post("/", "index")->name("index");
-                Route::delete("/delete/{office}", "delete")->name("delete");
+                Route::delete("/delete/{office}", "destroy")->name("delete");
                 Route::post("/options", "options")->name("options");
                 Route::post("/type/{office_type}/offices", "offices")->name("offices");
             });
