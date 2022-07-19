@@ -127,6 +127,9 @@ trait HasOfficeCrud
             ->when($request->input("type"), function (Builder $builder, string|OfficeTypes $type) {
                 $builder->where("type", $type);
             })
+            ->when($request->input("parent_id"), function (Builder $builder, int $parentId) {
+                $builder->where("parent_id", $parentId);
+            })
             ->when($request->input("filter"), function (Builder $builder, string $filter) {
                 $builder->where("id", "=", $filter)
                     ->orWhere("name", "like", "%$filter%")
