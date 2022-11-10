@@ -14,11 +14,11 @@ namespace Wovosoft\BkbOffices\Enums;
  */
 enum OfficeTypes: string
 {
-    case Branch = "br";
-    case DivisionalOffice = "do";
-    case DivisionalAuditOffice = "dao";
-    case RegionalAuditOffice = "rao";
-    case CRM_RMOffice = "crm_rm";
-    case CorporateBranch = "cb";
-    case HeadOffice = "ho";
+    case Branch = "BR";
+    case DivisionalOffice = "DO";
+    case DivisionalAuditOffice = "DAO";
+    case RegionalAuditOffice = "RAO";
+    case CRM_RMOffice = "RM/CRM";
+    case CorporateBranch = "CB";
+    case HeadOffice = "HO";
 }

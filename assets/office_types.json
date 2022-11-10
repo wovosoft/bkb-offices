@@ -1,0 +1,100 @@
+[
+    {
+        "OrgBranchType": {
+            "level": 1,
+            "createdBy": "super_admin",
+            "edit": "<a title='Edit' data-url='/admin/organization/BranchType/Edit/8/' class='action-type-edit'><i class='fa fa-edit'></i></a>",
+            "name": "HO",
+            "nameBn": "প্রধান কার্যালয়",
+            "description": "Head Office",
+            "id": 8,
+            "descriptionBn": "প্রধান কার্যালয়",
+            "delete": "<a title='Delete' data-url='/admin/organization/BranchType/Delete/8/' class='action-type-delete'><i class='fa fa-delete'></i></a>"
+        },
+        "id": 8
+    },
+    {
+        "OrgBranchType": {
+            "level": 2,
+            "createdBy": "super_admin",
+            "edit": "<a title='Edit' data-url='/admin/organization/BranchType/Edit/3/' class='action-type-edit'><i class='fa fa-edit'></i></a>",
+            "name": "RM/CRM",
+            "nameBn": "মুখ্য আঞ্চলিক/ আঞ্চলিক কার্যালয়",
+            "description": "RM/CRM Office",
+            "id": 3,
+            "descriptionBn": null,
+            "delete": "<a title='Delete' data-url='/admin/organization/BranchType/Delete/3/' class='action-type-delete'><i class='fa fa-delete'></i></a>"
+        },
+        "id": 3
+    },
+    {
+        "OrgBranchType": {
+            "level": 2,
+            "createdBy": "super_admin",
+            "edit": "<a title='Edit' data-url='/admin/organization/BranchType/Edit/5/' class='action-type-edit'><i class='fa fa-edit'></i></a>",
+            "name": "CB",
+            "nameBn": "করপোরেট শাখা",
+            "description": "Corporate Branch",
+            "id": 5,
+            "descriptionBn": null,
+            "delete": "<a title='Delete' data-url='/admin/organization/BranchType/Delete/5/' class='action-type-delete'><i class='fa fa-delete'></i></a>"
+        },
+        "id": 5
+    },
+    {
+        "OrgBranchType": {
+            "level": 3,
+            "createdBy": "super_admin",
+            "edit": "<a title='Edit' data-url='/admin/organization/BranchType/Edit/6/' class='action-type-edit'><i class='fa fa-edit'></i></a>",
+            "name": "RAO",
+            "nameBn": "আঞ্চলিক নিরীক্ষা কার্যালয়",
+            "description": "Regional Audit Office",
+            "id": 6,
+            "descriptionBn": null,
+            "delete": "<a title='Delete' data-url='/admin/organization/BranchType/Delete/6/' class='action-type-delete'><i class='fa fa-delete'></i></a>"
+        },
+        "id": 6
+    },
+    {
+        "OrgBranchType": {
+            "level": 3,
+            "createdBy": "super_admin",
+            "edit": "<a title='Edit' data-url='/admin/organization/BranchType/Edit/7/' class='action-type-edit'><i class='fa fa-edit'></i></a>",
+            "name": "BR",
+            "nameBn": "শাখা",
+            "description": "Branch",
+            "id": 7,
+            "descriptionBn": null,
+            "delete": "<a title='Delete' data-url='/admin/organization/BranchType/Delete/7/' class='action-type-delete'><i class='fa fa-delete'></i></a>"
+        },
+        "id": 7
+    },
+    {
+        "OrgBranchType": {
+            "level": 8,
+            "createdBy": "super_admin",
+            "edit": "<a title='Edit' data-url='/admin/organization/BranchType/Edit/4/' class='action-type-edit'><i class='fa fa-edit'></i></a>",
+            "name": "DAO",
+            "nameBn": "বিভাগীয় নিরীক্ষা কার্যালয়",
+            "description": "Divisional Audit Office",
+            "id": 4,
+            "descriptionBn": null,
+            "delete": "<a title='Delete' data-url='/admin/organization/BranchType/Delete/4/' class='action-type-delete'><i class='fa fa-delete'></i></a>"
+        },
+        "id": 4
+    },
+    {
+        "OrgBranchType": {
+            "level": 8,
+            "createdBy": "super_admin",
+            "edit": "<a title='Edit' data-url='/admin/organization/BranchType/Edit/2/' class='action-type-edit'><i class='fa fa-edit'></i></a>",
+            "name": "DO",
+            "nameBn": "বিভাগীয় কার্যালয়",
+            "description": "Divisional Office",
+            "id": 2,
+            "descriptionBn": null,
+            "delete": "<a title='Delete' data-url='/admin/organization/BranchType/Delete/2/' class='action-type-delete'><i class='fa fa-delete'></i></a>"
+        },
+        "id": 2
+    }
+]

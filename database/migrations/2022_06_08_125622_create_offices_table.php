@@ -18,6 +18,13 @@ return new class extends Migration {
             $table->string("name");
             $table->string("bn_name")->nullable();
             $table->string("code")->nullable();
+            $table->string("hrms_code")->nullable();
+            $table->string("city")->nullable();
+            $table->string("phone")->nullable();
+            $table->string("email")->nullable();
+            $table->string("routing_no")->nullable();
+
+
             $table->string("address")->nullable();
             $table->unsignedInteger("recommended_manpower")->nullable();
             $table->text("description")->nullable();
