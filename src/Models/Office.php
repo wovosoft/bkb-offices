@@ -49,7 +49,12 @@ class Office extends Model
 {
     use HasFactory;
     use HasOfficeTypeConditions;
-    use HasOfficeSearchable;
+
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        $this->table = config("bkb-offices.table_prefix") . "offices";
+    }
 
     protected $casts = [
         "type" => OfficeTypes::class

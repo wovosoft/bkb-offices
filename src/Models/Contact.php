@@ -32,4 +32,9 @@ class Contact extends Model
         "type" => ContactTypes::class
     ];
     use HasFactory;
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        $this->table = config("bkb-offices.table_prefix") . "contacts";
+    }
 }

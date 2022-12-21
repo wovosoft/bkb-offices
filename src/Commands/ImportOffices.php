@@ -39,23 +39,38 @@ class ImportOffices extends Command
         $rows->each(function ($row) {
             $office = new Office();
             $office->forceFill([
-                "name" => $row->OrgBranch?->name,
-                "bn_name" => $row->OrgBranch?->banglaName,
-                "code" => $row->OrgBranch->code ?? null,
-                "city" => $row->OrgBranch->city ?? null,
-                "phone" => $row->OrgBranch->phone ?? null,
-                "email" => $row->OrgBranch->email ?? null,
-                "routing_no" => $row->OrgBranch->routingNumber ?? null,
-                "hrms_code" => $row->OrgBranch->code ?? null,
-                "address" => $row->OrgBranch->mailingAddress ?? null,
+                "name" => $row->name,
+                "bn_name" => $row->bn_name,
+                "code" => $row->code ?? null,
+                "city" => $row->city ?? null,
+                "phone" => $row->phone ?? null,
+                "email" => $row->email ?? null,
+                "routing_no" => $row->routing_number ?? null,
+                "hrms_code" => $row->hrms_code ?? null,
+                "address" => $row->mailing_address ?? null,
                 "recommended_manpower" => 0,
-                "description" => $row->OrgBranch->description ?? null,
-
-                "type" => $row->OrgBranch?->orgBranchType?->name,
+                "description" => $row->description ?? null,
+                "type" => $row->type,
                 "parent_id" => null
             ]);
             $office->saveOrFail();
             $this->output->progressAdvance();
+        });
+
+        $this->info("\nFixing Parent=>Child Relation");
+        $rows->each(function ($child) use ($rows) {
+            if ($child->parent_id) {
+                $parentCode = $rows
+                    ->where("id", "=", $child->parent_id)
+                    ->first()
+                    ->code;
+
+                $childOffice = Office::whereCode($child->code)->first();
+                $parentOffice = Office::whereCode($parentCode)->first();
+
+                $childOffice->parent_id = $parentOffice->id;
+                $childOffice->save();
+            }
         });
 
         $this->output->progressFinish();

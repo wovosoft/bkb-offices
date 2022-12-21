@@ -12,9 +12,13 @@ use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 class DivisionalAuditOffice extends Model
 {
     use HasOfficeTypeConditions;
-    use HasOfficeSearchable;
 
-    protected $table = "offices";
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        $this->table = config("bkb-offices.table_prefix") . "offices";
+    }
+
     protected $casts = [
         "type" => OfficeTypes::class
     ];

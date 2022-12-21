@@ -3,7 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Wovosoft\BkbOffices\Enums\OfficeTypes;
 
 return new class extends Migration {
     /**
@@ -13,11 +12,14 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('offices', function (Blueprint $table) {
+        Schema::create(config("bkb-offices.table_prefix") . 'offices', function (Blueprint $table) {
             $table->id();
             $table->string("name");
             $table->string("bn_name")->nullable();
-            $table->string("code")->nullable();
+            $table->string("code")
+                ->unique()
+                ->index();
+
             $table->string("hrms_code")->nullable();
             $table->string("city")->nullable();
             $table->string("phone")->nullable();
@@ -33,10 +35,14 @@ return new class extends Migration {
              * Pointing parent to same table. Everything will be tree based
              * aliasing: office_id => parent_id
              */
-            $table->unsignedBigInteger("parent_id")->nullable();
-            $table->string("type")
+            $table->foreignId("parent_id")
                 ->nullable()
-                ->comment("Type of " . OfficeTypes::class);
+                ->references("id")
+                ->on(config("bkb-offices.table_prefix") . 'offices')
+                ->onUpdate("cascade")
+                ->onDelete("set null");
+
+            $table->string("type")->nullable();
             $table->timestamps();
         });
     }
@@ -48,6 +54,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('offices');
+        Schema::dropIfExists(config("bkb-offices.table_prefix") . 'offices');
     }
 };

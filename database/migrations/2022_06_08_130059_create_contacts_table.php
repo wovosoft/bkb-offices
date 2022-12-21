@@ -12,9 +12,9 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('contacts', function (Blueprint $table) {
+        Schema::create(config("bkb-offices.table_prefix") . 'contacts', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("office_id");
+            $table->foreignId("office_id");
             /**
              * Type of Wovosoft\BkbOffices\Enums\Types
              */
@@ -31,6 +31,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('contacts');
+        Schema::dropIfExists(config("bkb-offices.table_prefix") . 'contacts');
     }
 };

@@ -13,14 +13,15 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('office_types', function (Blueprint $table) {
+        Schema::create(config("bkb-offices.table_prefix") . 'office_types', function (Blueprint $table) {
             $table->id();
             $table->string("name");
             $table->string("bn_name")->nullable();
             $table->string("description")->nullable();
-            $table->enum("type", array_map(fn($item) => $item->value, OfficeTypes::cases()))
-                ->unique()
-                ->comment("Type of " . OfficeTypes::class);
+            $table->enum(
+                "type",
+                array_map(fn($item) => $item->value, OfficeTypes::cases())
+            )->unique();
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('office_types');
+        Schema::dropIfExists(config("bkb-offices.table_prefix") . 'office_types');
     }
 };

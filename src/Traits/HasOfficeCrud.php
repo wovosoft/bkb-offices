@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Validation\Rules\Enum;
 use Symfony\Component\Routing\Annotation\Route;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Models\Office;
+use Wovosoft\BkbOffices\Requests\StoreOfficeRequest;
 
 trait HasOfficeCrud
 {
@@ -22,27 +22,6 @@ trait HasOfficeCrud
     private array $optionsSelectableCols = [
         "id", "name", "bn_name", "code", "address"
     ];
-
-    /**
-     * Form Submit Validation Rules for store/update Operation
-     * @var array|\string[][]
-     */
-    private array $formValidations;
-
-    public function __construct()
-    {
-        $this->formValidations = [
-            "name" => ["required", "string"],
-            "bn_name" => ["nullable", "string"],
-            "code" => ["nullable", "string"],
-            "address" => ["nullable", "string"],
-            "recommended_manpower" => ["nullable", "numeric"],
-            "current_manpower" => ["nullable", "numeric"],
-            "description" => ["nullable", "string"],
-            "parent_id" => ["nullable", "numeric"],
-            "type" => ["nullable", new Enum(OfficeTypes::class)],
-        ];
-    }
 
     /**
      * If needed to modify options, just modify this method.
@@ -63,17 +42,15 @@ trait HasOfficeCrud
 
     /**
      * @Route : "offices/store" as PUT Method
-     * @param Request $request
+     * @param StoreOfficeRequest $request
      * @return JsonResponse
-     * @throws \Throwable
      */
-    public function store(Request $request): JsonResponse
+    public function store(StoreOfficeRequest $request): JsonResponse
     {
         DB::beginTransaction();
         try {
-            $validatedData = $request->validate($this->formValidations);
             $office = new Office();
-            $office->forceFill($validatedData);
+            $office->forceFill($request->validated());
             $office->saveOrFail();
             DB::commit();
             return response()->json([
@@ -90,16 +67,14 @@ trait HasOfficeCrud
     /**
      * @Route : "offices/update/{office}" as PUT Method
      * @param Office $office
-     * @param Request $request
+     * @param StoreOfficeRequest $request
      * @return JsonResponse
-     * @throws \Throwable
      */
-    public function update(Office $office, Request $request): JsonResponse
+    public function update(Office $office, StoreOfficeRequest $request): JsonResponse
     {
         DB::beginTransaction();
         try {
-            $validatedData = $request->validate($this->formValidations);
-            $office->forceFill($validatedData);
+            $office->forceFill($request->validated());
             $office->saveOrFail();
             DB::commit();
             return response()->json([
