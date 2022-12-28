@@ -18,11 +18,11 @@ class BkbOfficesServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'wovosoft');
-        if (config("bkb-offices.views_enabled")) {
-            $this->loadViewsFrom(__DIR__ . '/../resources/views', 'wovosoft');
-        }
+//        if (config("bkb-offices.views_enabled")) {
+//            $this->loadViewsFrom(__DIR__ . '/../resources/views', 'wovosoft');
+//        }
 
-        Blade::componentNamespace("Wovosoft\\BkbOffices\\View\\Components", "bkb-offices");
+//        Blade::componentNamespace("Wovosoft\\BkbOffices\\View\\Components", "bkb-offices");
 
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
         if (config("bkb-offices.routes_enabled")) {
