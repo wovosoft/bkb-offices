@@ -24,7 +24,10 @@ class BkbOfficesServiceProvider extends ServiceProvider
 
 //        Blade::componentNamespace("Wovosoft\\BkbOffices\\View\\Components", "bkb-offices");
 
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        if (config("bkb-offices.migrations_enabled")) {
+            $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        }
+
         if (config("bkb-offices.routes_enabled")) {
             $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
         }
