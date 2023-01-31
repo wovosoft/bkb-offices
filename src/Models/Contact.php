@@ -3,7 +3,6 @@
 namespace Wovosoft\BkbOffices\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 use Wovosoft\BkbOffices\Enums\ContactTypes;
 
 /**
@@ -26,7 +25,7 @@ use Wovosoft\BkbOffices\Enums\ContactTypes;
  * @method static \Illuminate\Database\Eloquent\Builder|Contact whereUpdatedAt($value)
  * @mixin \Eloquent
  */
-class Contact extends Model
+class Contact extends BaseModel
 {
     protected $casts = [
         "type" => ContactTypes::class

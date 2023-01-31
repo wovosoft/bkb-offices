@@ -3,9 +3,7 @@
 namespace Wovosoft\BkbOffices\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Laravel\Scout\Searchable;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
@@ -33,7 +31,7 @@ use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
  * @method static \Illuminate\Database\Eloquent\Builder|OfficeType whereUpdatedAt($value)
  * @mixin \Eloquent
  */
-class OfficeType extends Model
+class OfficeType extends BaseModel
 {
     use HasFactory;
     use HasOfficeTypeConditions;

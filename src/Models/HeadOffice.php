@@ -2,13 +2,11 @@
 
 namespace Wovosoft\BkbOffices\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Models\Scopes\HeadOffices;
-use Wovosoft\BkbOffices\Traits\HasOfficeSearchable;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
-class HeadOffice extends Model
+class HeadOffice extends BaseModel
 {
     use HasOfficeTypeConditions;
 

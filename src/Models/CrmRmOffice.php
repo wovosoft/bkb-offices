@@ -2,15 +2,13 @@
 
 namespace Wovosoft\BkbOffices\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Models\Scopes\CrmRmOffices;
-use Wovosoft\BkbOffices\Traits\HasOfficeSearchable;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
-class CrmRmOffice extends Model
+class CrmRmOffice extends BaseModel
 {
     use HasOfficeTypeConditions;
 

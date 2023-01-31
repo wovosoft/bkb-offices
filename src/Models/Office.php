@@ -4,11 +4,9 @@ namespace Wovosoft\BkbOffices\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
-use Wovosoft\BkbOffices\Traits\HasOfficeSearchable;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
 /**
@@ -45,7 +43,7 @@ use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
  * @method static \Illuminate\Database\Eloquent\Builder|Office divisionalOffices(\Illuminate\Database\Eloquent\Builder $builder)
  * @mixin \Eloquent
  */
-class Office extends Model
+class Office extends BaseModel
 {
     use HasFactory;
     use HasOfficeTypeConditions;
