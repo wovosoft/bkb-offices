@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
+use Wovosoft\BkbOffices\Enums\ResidentAreas;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 
 /**
@@ -55,7 +56,8 @@ class Office extends BaseModel
     }
 
     protected $casts = [
-        "type" => OfficeTypes::class
+        "type" => OfficeTypes::class,
+        "resident_area" => ResidentAreas::class
     ];
 
     /**

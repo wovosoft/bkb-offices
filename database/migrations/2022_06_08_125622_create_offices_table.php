@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Wovosoft\BkbOffices\Enums\ResidentAreas;
 
 return new class extends Migration {
     /**
@@ -43,6 +44,7 @@ return new class extends Migration {
                 ->onDelete("set null");
 
             $table->string("type")->nullable();
+            $table->enum('resident_area', ResidentAreas::values())->nullable();
             $table->timestamps();
         });
     }

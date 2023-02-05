@@ -5,6 +5,7 @@ namespace Wovosoft\BkbOffices\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Enum;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
+use Wovosoft\BkbOffices\Enums\ResidentAreas;
 
 class StoreOfficeRequest extends FormRequest
 {
@@ -36,6 +37,7 @@ class StoreOfficeRequest extends FormRequest
             "description" => ["nullable", "string"],
             "parent_id" => ["nullable", "numeric"],
             "type" => ["nullable", new Enum(OfficeTypes::class)],
+            "resident_area" => ["nullable", new Enum(ResidentAreas::class)],
         ];
     }
 }
