@@ -31,6 +31,7 @@ class ExportOffices extends Command
     public function handle(): int
     {
         $offices = Office::query()
+            ->orderBy('id')
             ->get();
 
         //store
