@@ -31,62 +31,78 @@ class ImportOffices extends Command
      */
     public function handle(): int
     {
+        $this->insertTypes();
+
         $rows = collect(json_decode(File::get(__DIR__ . "/../../assets/offices.json")));
         $this->info("Importing Offices : ");
         $this->output->progressStart($rows->count());
-        $rows->each(function ($row) {
-            $office = new Office();
-            $office->forceFill([
-                "name" => $row->name,
-                "bn_name" => $row->bn_name,
-                "code" => $row->code ?? null,
-                "city" => $row->city ?? null,
-                "phone" => $row->phone ?? null,
-                "email" => $row->email ?? null,
-                "routing_no" => $row->routing_number ?? null,
-                "hrms_code" => $row->hrms_code ?? null,
-                "address" => $row->mailing_address ?? null,
-                "recommended_manpower" => 0,
-                "description" => $row->description ?? null,
-                "type" => $row->type,
-                "parent_id" => null
-            ]);
-            $office->saveOrFail();
-            $this->output->progressAdvance();
-        });
 
-        $this->info("\nFixing Parent=>Child Relation\n");
-        $rows->each(function ($child) use ($rows) {
-            if ($child->parent_id) {
-                $parentCode = $rows
-                    ->where("id", "=", $child->parent_id)
-                    ->first()
-                    ->code;
+        //head offices
 
-                $childOffice = Office::whereCode($child->code)->first();
-                $parentOffice = Office::whereCode($parentCode)->first();
+        $rows
+            ->whereNull('parent_id')
+            ->each(function ($row) {
+                $this->insertOffice($row);
+                $this->output->progressAdvance();
+            });
 
-                $childOffice->parent_id = $parentOffice->id;
-                $childOffice->save();
-            }
-        });
+
+        foreach (["RM/CRM", "DAO", "RAO", "CB", "BR"] as $type) {
+            $rows->where('type', '=', $type)
+                ->whereNotNull('parent_id')
+                ->each(function ($cro) use ($type, $rows) {
+                    $item = (new Office)->forceFill(
+                        collect($cro)
+                            ->except(['id', 'created_at', 'updated_at'])
+                            ->toArray()
+                    );
+
+                    if (!is_null($cro->parent_id)) {
+                        $raw_parent = $rows->where('id', '=', $cro->parent_id)->first();
+
+                        $parent = Office::query()->where('code', '=', $raw_parent->code)->first();
+                        $item->forceFill([
+                            "parent_id" => $parent->id
+                        ]);
+                    }
+
+                    $item->saveOrFail();
+                });
+        }
 
         $this->output->progressFinish();
 
+
+        return 0;
+    }
+
+    /**
+     * @throws \Throwable
+     */
+    private function insertOffice(\stdClass $office): bool
+    {
+        return (new Office)->forceFill(
+            collect($office)
+                ->except(['id', 'created_at', 'updated_at'])
+                ->toArray()
+        )->saveOrFail();
+    }
+
+    private function insertTypes()
+    {
         $types = collect(json_decode(File::get(__DIR__ . "/../../assets/office_types.json")));
         $this->info("Importing Office Types: ");
         $this->output->progressStart($types->count());
         foreach ($types as $type) {
             $ot = new OfficeType();
             $ot->forceFill([
-                "name" => $type->OrgBranchType?->description,
-                "bn_name" => $type->OrgBranchType?->nameBn,
+                "name"        => $type->OrgBranchType?->description,
+                "bn_name"     => $type->OrgBranchType?->nameBn,
                 "description" => $type->OrgBranchType?->description,
-                "type" => $type->OrgBranchType?->name,
+                "type"        => $type->OrgBranchType?->name,
             ])->saveOrFail();
             $this->output->progressAdvance();
         }
         $this->output->progressFinish();
-        return 0;
     }
 }

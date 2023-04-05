@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Wovosoft\BkbOffices\Actions\Offices;
 use Wovosoft\BkbOffices\Actions\OfficeTypes;
+use Wovosoft\BkbOffices\Commands\ExportOffices;
 use Wovosoft\BkbOffices\Commands\ImportOffices;
 
 class BkbOfficesServiceProvider extends ServiceProvider
@@ -104,7 +105,8 @@ class BkbOfficesServiceProvider extends ServiceProvider
         // Registering package commands only when running in console.
         if ($this->app->runningInConsole()) {
             $this->commands([
-                ImportOffices::class
+                ImportOffices::class,
+                ExportOffices::class
             ]);
         }
     }
