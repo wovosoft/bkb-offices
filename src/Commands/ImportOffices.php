@@ -81,11 +81,13 @@ class ImportOffices extends Command
      */
     private function insertOffice(\stdClass $office): bool
     {
-        return (new Office)->forceFill(
-            collect($office)
-                ->except(['id', 'created_at', 'updated_at'])
-                ->toArray()
-        )->saveOrFail();
+        return (new Office)
+            ->forceFill(
+                collect($office)
+                    ->except(['id', 'created_at', 'updated_at'])
+                    ->toArray()
+            )
+            ->saveOrFail();
     }
 
     private function insertTypes()

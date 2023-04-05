@@ -21,6 +21,10 @@ return new class extends Migration {
                 ->unique()
                 ->index();
 
+            $table->string("extended_code")
+                ->unique()
+                ->index();
+
             $table->string("hrms_code")->nullable();
             $table->string("city")->nullable();
             $table->string("phone")->nullable();

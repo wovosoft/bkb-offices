@@ -27,17 +27,18 @@ class StoreOfficeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "id" => ["numeric", "nullable"],
-            "name" => ["required", "string"],
-            "bn_name" => ["nullable", "string"],
-            "code" => ["nullable", "string"],
-            "address" => ["nullable", "string"],
+            "id"                   => ["numeric", "nullable"],
+            "name"                 => ["required", "string"],
+            "bn_name"              => ["nullable", "string"],
+            "code"                 => ["nullable", "string"],
+            "extended_code"        => ["nullable", "numeric", "max_digits:6", "min_digits:6"],
+            "address"              => ["nullable", "string"],
             "recommended_manpower" => ["nullable", "numeric"],
-            "current_manpower" => ["nullable", "numeric"],
-            "description" => ["nullable", "string"],
-            "parent_id" => ["nullable", "numeric"],
-            "type" => ["nullable", new Enum(OfficeTypes::class)],
-            "resident_area" => ["nullable", new Enum(ResidentAreas::class)],
+            "current_manpower"     => ["nullable", "numeric"],
+            "description"          => ["nullable", "string"],
+            "parent_id"            => ["nullable", "numeric"],
+            "type"                 => ["nullable", new Enum(OfficeTypes::class)],
+            "resident_area"        => ["nullable", new Enum(ResidentAreas::class)],
         ];
     }
 }
