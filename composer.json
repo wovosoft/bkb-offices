@@ -16,9 +16,6 @@
         "Bangladesh Krishi Bank",
         "Bangladesh Krishi Bank Office List"
     ],
-    "require": {
-        "laravel/framework": "^10.0"
-    },
     "autoload": {
         "psr-4": {
             "Wovosoft\\BkbOffices\\": "src/",
