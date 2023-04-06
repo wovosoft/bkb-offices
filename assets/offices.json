@@ -2247,8 +2247,8 @@
         "extended_code": "020172",
         "hrms_code": "DAO01",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "043164917",
+        "email": "daobarisal@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -2257,7 +2257,7 @@
         "type": "DAO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:20:36.000000Z"
+        "updated_at": "2023-04-06T05:09:16.000000Z"
     },
     {
         "id": 116,
@@ -2267,8 +2267,8 @@
         "extended_code": "290172",
         "hrms_code": "DAO02",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "0312584540",
+        "email": "daochittagong@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -2277,7 +2277,7 @@
         "type": "DAO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:22:17.000000Z"
+        "updated_at": "2023-04-06T05:08:58.000000Z"
     },
     {
         "id": 117,
@@ -2288,7 +2288,7 @@
         "hrms_code": "DAO04",
         "city": null,
         "phone": null,
-        "email": null,
+        "email": "daodhaka@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -2297,27 +2297,27 @@
         "type": "DAO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:21:33.000000Z"
+        "updated_at": "2023-04-06T05:08:40.000000Z"
     },
     {
         "id": 118,
         "name": "Divisional Audit Office, Faridpur",
-        "bn_name": "বিভাগীয় নিরীক্ষা কার্যালয়, ফরিদপৃর",
+        "bn_name": "বিভাগীয় নিরীক্ষা কার্যালয়, ফরিদপুর",
         "code": "DAO05",
-        "extended_code": "DAO05",
+        "extended_code": "111117",
         "hrms_code": "DAO05",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "063161387",
+        "email": "daofaridpur@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
         "description": null,
         "parent_id": 56,
         "type": "DAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T05:10:40.000000Z"
     },
     {
         "id": 119,
@@ -2327,8 +2327,8 @@
         "extended_code": "130172",
         "hrms_code": "DAO06",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02477720317",
+        "email": "daokhulna@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -2337,18 +2337,18 @@
         "type": "DAO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:20:56.000000Z"
+        "updated_at": "2023-04-06T05:11:04.000000Z"
     },
     {
         "id": 120,
         "name": "Divisional Audit Office, Kushtia",
         "bn_name": "বিভাগীয় নিরীক্ষা কার্যালয়, কুষ্টিয়া",
         "code": "DAO07",
-        "extended_code": "DAO07",
+        "extended_code": "111118",
         "hrms_code": "DAO07",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02477782585",
+        "email": "daokushtia@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -2357,18 +2357,18 @@
         "type": "DAO",
         "resident_area": null,
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T05:11:28.000000Z"
     },
     {
         "id": 121,
         "name": "Divisional Audit Office, Mymensingh",
         "bn_name": "বিভাগীয় নিরীক্ষা কার্যালয়, ময়মনসিংহ",
         "code": "DAO08",
-        "extended_code": "DAO08",
+        "extended_code": "111119",
         "hrms_code": "DAO08",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "09151975",
+        "email": "daomymensingh.@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -2377,7 +2377,7 @@
         "type": "DAO",
         "resident_area": null,
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T05:11:54.000000Z"
     },
     {
         "id": 122,
@@ -2407,8 +2407,8 @@
         "extended_code": "230172",
         "hrms_code": "DAO03",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "08165230",
+        "email": "daocomilla@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -2417,7 +2417,7 @@
         "type": "DAO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:21:16.000000Z"
+        "updated_at": "2023-04-06T05:09:39.000000Z"
     },
     {
         "id": 124,
