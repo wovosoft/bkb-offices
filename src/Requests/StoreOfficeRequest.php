@@ -27,10 +27,11 @@ class StoreOfficeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "id"                   => ["numeric", "nullable"],
             "name"                 => ["required", "string"],
             "bn_name"              => ["nullable", "string"],
             "code"                 => ["nullable", "string"],
+            "phone"                => ["nullable", "string"],
+            "email"                => ["nullable", "string"],
             "extended_code"        => ["nullable", "numeric", "max_digits:6", "min_digits:6"],
             "address"              => ["nullable", "string"],
             "recommended_manpower" => ["nullable", "numeric"],

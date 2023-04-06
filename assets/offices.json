@@ -1004,11 +1004,11 @@
         "name": "Divisional Office, Chattogram",
         "bn_name": "বিভাগীয় কার্যালয়, চট্টগ্রাম",
         "code": "DO2",
-        "extended_code": "DO2",
+        "extended_code": "111113",
         "hrms_code": "DO2",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02-41355739, 02-41355738",
+        "email": "gmchittagong@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -1017,7 +1017,7 @@
         "type": "DO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T05:02:07.000000Z"
     },
     {
         "id": 54,
@@ -1027,8 +1027,8 @@
         "extended_code": "230171",
         "hrms_code": "DO3",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02-334400157",
+        "email": "gmcomilla@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -1037,7 +1037,7 @@
         "type": "DO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:18:07.000000Z"
+        "updated_at": "2023-04-06T05:03:49.000000Z"
     },
     {
         "id": 55,
@@ -1047,8 +1047,8 @@
         "extended_code": "410171",
         "hrms_code": "DO4",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "0248040586",
+        "email": "gmdhaka@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -1057,18 +1057,18 @@
         "type": "DO",
         "resident_area": "dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:18:27.000000Z"
+        "updated_at": "2023-04-06T05:01:40.000000Z"
     },
     {
         "id": 56,
         "name": "Divisional Office, Faridpur",
         "bn_name": "বিভাগীয় কার্যালয়, ফরিদপুর",
         "code": "DO5",
-        "extended_code": "DO5",
+        "extended_code": "111114",
         "hrms_code": "DO5",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02478802162, 02478802163",
+        "email": "gmfaridpur@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -1077,7 +1077,7 @@
         "type": "DO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T05:04:09.000000Z"
     },
     {
         "id": 57,
@@ -1087,8 +1087,8 @@
         "extended_code": "130171",
         "hrms_code": "DO6",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02477-721717, 02477-725586",
+        "email": "gmkhulna@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -1097,18 +1097,18 @@
         "type": "DO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:17:12.000000Z"
+        "updated_at": "2023-04-06T05:04:47.000000Z"
     },
     {
         "id": 58,
         "name": "Divisional Office, Kushtia",
         "bn_name": "বিভাগীয় কার্যালয়, কুষ্টিয়া",
         "code": "DO7",
-        "extended_code": "DO7",
+        "extended_code": "111115",
         "hrms_code": "DO7",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02477782576, 02477782577,02477782578, 02477783234",
+        "email": "gmkushtia@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -1117,18 +1117,18 @@
         "type": "DO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T05:05:47.000000Z"
     },
     {
         "id": 59,
         "name": "Divisional Office, Mymensingh",
         "bn_name": "বিভাগীয় কার্যালয়, ময়মনসিংহ",
         "code": "DO8",
-        "extended_code": "DO8",
+        "extended_code": "111116",
         "hrms_code": "DO8",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02996663679, 02-996664231",
+        "email": "gmmymensingh@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -1137,7 +1137,7 @@
         "type": "DO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T05:06:03.000000Z"
     },
     {
         "id": 60,
@@ -1147,8 +1147,8 @@
         "extended_code": "360171",
         "hrms_code": "DO9",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02-996633062",
+        "email": "gmsylhet@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -1157,7 +1157,7 @@
         "type": "DO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:17:37.000000Z"
+        "updated_at": "2023-04-06T05:06:24.000000Z"
     },
     {
         "id": 61,
@@ -1167,8 +1167,8 @@
         "extended_code": "020171",
         "hrms_code": "DO1",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "02-478864218",
+        "email": "gmbarisal@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -1177,7 +1177,7 @@
         "type": "DO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:16:46.000000Z"
+        "updated_at": "2023-04-06T05:02:28.000000Z"
     },
     {
         "id": 62,
@@ -1403,8 +1403,8 @@
         "id": 73,
         "name": "Chief Regional Office, Cumilla",
         "bn_name": "মুখ্য আঞ্চলিক কার্যালয়, কুমিল্লা",
-        "code": "RO\/CRO14",
-        "extended_code": "RO\/CRO14",
+        "code": "230191",
+        "extended_code": "230191",
         "hrms_code": "RO\/CRO14",
         "city": null,
         "phone": null,
@@ -1415,9 +1415,9 @@
         "description": null,
         "parent_id": 54,
         "type": "RM\/CRM",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:43:30.000000Z"
     },
     {
         "id": 74,
@@ -1543,8 +1543,8 @@
         "id": 80,
         "name": "Chief Regional Office, Dhaka",
         "bn_name": "মুখ্য আঞ্চলিক কার্যালয়, ঢাকা",
-        "code": "RO\/CRO21",
-        "extended_code": "RO\/CRO21",
+        "code": "410191",
+        "extended_code": "410191",
         "hrms_code": "RO\/CRO21",
         "city": null,
         "phone": null,
@@ -1555,16 +1555,16 @@
         "description": null,
         "parent_id": 55,
         "type": "RM\/CRM",
-        "resident_area": null,
+        "resident_area": "dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:45:00.000000Z"
     },
     {
         "id": 81,
         "name": "Chief Regional Office, Gazipur",
         "bn_name": "মুখ্য আঞ্চলিক কার্যালয়, গাজীপুর",
-        "code": "RO\/CRO22",
-        "extended_code": "RO\/CRO22",
+        "code": "420191",
+        "extended_code": "420191",
         "hrms_code": "RO\/CRO22",
         "city": null,
         "phone": null,
@@ -1575,9 +1575,9 @@
         "description": null,
         "parent_id": 55,
         "type": "RM\/CRM",
-        "resident_area": null,
+        "resident_area": "dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:45:21.000000Z"
     },
     {
         "id": 82,
@@ -1683,8 +1683,8 @@
         "id": 87,
         "name": "Chief Regional Office, Faridpur",
         "bn_name": "মুখ্য আঞ্চলিক কার্যালয়, ফরিদপুর",
-        "code": "RO\/CRO29",
-        "extended_code": "RO\/CRO29",
+        "code": "080191",
+        "extended_code": "080191",
         "hrms_code": "RO\/CRO29",
         "city": null,
         "phone": null,
@@ -1695,9 +1695,9 @@
         "description": null,
         "parent_id": 56,
         "type": "RM\/CRM",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:35:26.000000Z"
     },
     {
         "id": 88,
@@ -1783,8 +1783,8 @@
         "id": 92,
         "name": "Chief Regional Office, Khulna",
         "bn_name": "মুখ্য আঞ্চলিক কার্যালয়, খুলনা",
-        "code": "RO\/CRO34",
-        "extended_code": "RO\/CRO34",
+        "code": "130191",
+        "extended_code": "130191",
         "hrms_code": "RO\/CRO34",
         "city": null,
         "phone": null,
@@ -1795,9 +1795,9 @@
         "description": null,
         "parent_id": 57,
         "type": "RM\/CRM",
-        "resident_area": null,
+        "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:38:56.000000Z"
     },
     {
         "id": 93,
@@ -1823,8 +1823,8 @@
         "id": 94,
         "name": "Chief Regional Office, Jashore",
         "bn_name": "মুখ্য আঞ্চলিক কার্যালয়, যশোর",
-        "code": "RO\/CRO36",
-        "extended_code": "RO\/CRO36",
+        "code": "160191",
+        "extended_code": "160191",
         "hrms_code": "RO\/CRO36",
         "city": null,
         "phone": null,
@@ -1835,9 +1835,9 @@
         "description": null,
         "parent_id": 57,
         "type": "RM\/CRM",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:39:20.000000Z"
     },
     {
         "id": 95,
@@ -2063,8 +2063,8 @@
         "id": 106,
         "name": "Chief Regional Office, Sylhet",
         "bn_name": "মুখ্য আঞ্চলিক কার্যালয়, সিলেট",
-        "code": "RO\/CRO50",
-        "extended_code": "RO\/CRO50",
+        "code": "360191",
+        "extended_code": "360191",
         "hrms_code": "RO\/CRO50",
         "city": null,
         "phone": null,
@@ -2075,9 +2075,9 @@
         "description": null,
         "parent_id": 60,
         "type": "RM\/CRM",
-        "resident_area": null,
+        "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:44:32.000000Z"
     },
     {
         "id": 107,
@@ -2423,8 +2423,8 @@
         "id": 124,
         "name": "Regional Audit Office, Cox'sbazar",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, কক্সবাজার",
-        "code": "RAU10",
-        "extended_code": "RAU10",
+        "code": "310192",
+        "extended_code": "310192",
         "hrms_code": "RAU10",
         "city": null,
         "phone": null,
@@ -2437,7 +2437,7 @@
         "type": "RAO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:08:56.000000Z"
     },
     {
         "id": 125,
@@ -2563,8 +2563,8 @@
         "id": 131,
         "name": "Regional Audit Office, Chattogram  (West)",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, চট্টগ্রাম(পশ্চিম)",
-        "code": "RAU08",
-        "extended_code": "RAU08",
+        "code": "290196",
+        "extended_code": "290196",
         "hrms_code": "RAU08",
         "city": null,
         "phone": null,
@@ -2575,16 +2575,16 @@
         "description": null,
         "parent_id": 53,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:08:28.000000Z"
     },
     {
         "id": 132,
         "name": "Regional Audit Office, Bandarban",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, বান্দরবান",
-        "code": "RAU09",
-        "extended_code": "RAU09",
+        "code": "320192",
+        "extended_code": "320192",
         "hrms_code": "RAU09",
         "city": null,
         "phone": null,
@@ -2595,16 +2595,16 @@
         "description": null,
         "parent_id": 53,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:09:17.000000Z"
     },
     {
         "id": 133,
         "name": "Regional Audit Office, Khagrachari",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, খাগড়াছড়ি",
-        "code": "RAU11",
-        "extended_code": "RAU11",
+        "code": "340192",
+        "extended_code": "340192",
         "hrms_code": "RAU11",
         "city": null,
         "phone": null,
@@ -2615,16 +2615,16 @@
         "description": null,
         "parent_id": 53,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:13:49.000000Z"
     },
     {
         "id": 134,
         "name": "Regional Audit Office, Patia",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, পটিয়া",
-        "code": "RAU12",
-        "extended_code": "RAU12",
+        "code": "300192",
+        "extended_code": "300192",
         "hrms_code": "RAU12",
         "city": null,
         "phone": null,
@@ -2635,9 +2635,9 @@
         "description": null,
         "parent_id": 53,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:28:17.000000Z"
     },
     {
         "id": 135,
@@ -2723,8 +2723,8 @@
         "id": 139,
         "name": "Regional Audit Office, Feni",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, ফেনী",
-        "code": "RAU18",
-        "extended_code": "RAU18",
+        "code": "270192",
+        "extended_code": "270192",
         "hrms_code": "RAU18",
         "city": null,
         "phone": null,
@@ -2735,16 +2735,16 @@
         "description": null,
         "parent_id": 54,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:06:33.000000Z"
     },
     {
         "id": 140,
         "name": "Regional Audit Office, Laksam",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, লাকসাম",
-        "code": "RAU19",
-        "extended_code": "RAU19",
+        "code": "530192",
+        "extended_code": "530192",
         "hrms_code": "RAU19",
         "city": null,
         "phone": null,
@@ -2755,16 +2755,16 @@
         "description": null,
         "parent_id": 54,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:30:01.000000Z"
     },
     {
         "id": 141,
         "name": "Regional Audit Office, Lakshmipur",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, লক্ষ্মীপুর",
-        "code": "RAU20",
-        "extended_code": "RAU20",
+        "code": "280192",
+        "extended_code": "280192",
         "hrms_code": "RAU20",
         "city": null,
         "phone": null,
@@ -2777,14 +2777,14 @@
         "type": "RAO",
         "resident_area": null,
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:30:30.000000Z"
     },
     {
         "id": 142,
         "name": "Regional Audit Office, Noakhali",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, নোয়াখালী",
-        "code": "RAU21",
-        "extended_code": "RAU21",
+        "code": "260192",
+        "extended_code": "260192",
         "hrms_code": "RAU21",
         "city": null,
         "phone": null,
@@ -2795,16 +2795,16 @@
         "description": null,
         "parent_id": 54,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:06:19.000000Z"
     },
     {
         "id": 143,
         "name": "Regional Audit Office, Dhaka",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, ঢাকা",
-        "code": "RAU22",
-        "extended_code": "RAU22",
+        "code": "410192",
+        "extended_code": "410192",
         "hrms_code": "RAU22",
         "city": null,
         "phone": null,
@@ -2815,16 +2815,16 @@
         "description": null,
         "parent_id": 55,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:15:50.000000Z"
     },
     {
         "id": 144,
         "name": "Regional Audit Office, Gazipur",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, গাজীপুর",
-        "code": "RAU23",
-        "extended_code": "RAU23",
+        "code": "420192",
+        "extended_code": "420192",
         "hrms_code": "RAU23",
         "city": null,
         "phone": null,
@@ -2835,16 +2835,16 @@
         "description": null,
         "parent_id": 55,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:16:08.000000Z"
     },
     {
         "id": 145,
         "name": "Regional Audit Office, Manikganj",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, মানিকগঞ্জ",
-        "code": "RAU24",
-        "extended_code": "RAU24",
+        "code": "430192",
+        "extended_code": "430192",
         "hrms_code": "RAU24",
         "city": null,
         "phone": null,
@@ -2855,16 +2855,16 @@
         "description": null,
         "parent_id": 55,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:17:25.000000Z"
     },
     {
         "id": 146,
         "name": "Regional Audit Office, Munshiganj",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, মুন্সীগঞ্জ",
-        "code": "RAU25",
-        "extended_code": "RAU25",
+        "code": "440192",
+        "extended_code": "440192",
         "hrms_code": "RAU25",
         "city": null,
         "phone": null,
@@ -2875,16 +2875,16 @@
         "description": null,
         "parent_id": 55,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:23:32.000000Z"
     },
     {
         "id": 147,
         "name": "Regional Audit Office, Narshingdi",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, নরসিংদী",
-        "code": "RAU27",
-        "extended_code": "RAU27",
+        "code": "450192",
+        "extended_code": "450192",
         "hrms_code": "RAU27",
         "city": null,
         "phone": null,
@@ -2895,16 +2895,16 @@
         "description": null,
         "parent_id": 55,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:23:46.000000Z"
     },
     {
         "id": 148,
         "name": "Regional Audit Office, Tangail (North)",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, টাঙ্গাইল (উ:)",
-        "code": "RAU28",
-        "extended_code": "RAU28",
+        "code": "500192",
+        "extended_code": "500192",
         "hrms_code": "RAU28",
         "city": null,
         "phone": null,
@@ -2915,16 +2915,16 @@
         "description": null,
         "parent_id": 55,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:25:26.000000Z"
     },
     {
         "id": 149,
         "name": "Regional Audit Office, Tangail (South)",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, টাঙ্গাইল (দ:)",
-        "code": "RAU29",
-        "extended_code": "RAU29",
+        "code": "500196",
+        "extended_code": "500196",
         "hrms_code": "RAU29",
         "city": null,
         "phone": null,
@@ -2935,9 +2935,9 @@
         "description": null,
         "parent_id": 55,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:25:41.000000Z"
     },
     {
         "id": 150,
@@ -3223,8 +3223,8 @@
         "id": 164,
         "name": "Regional Audit Office, Mymensingh (North)",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, ময়মনসিংহ (উ:)",
-        "code": "RAU45",
-        "extended_code": "RAU45",
+        "code": "470192",
+        "extended_code": "470192",
         "hrms_code": "RAU45",
         "city": null,
         "phone": null,
@@ -3235,16 +3235,16 @@
         "description": null,
         "parent_id": 59,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:24:25.000000Z"
     },
     {
         "id": 165,
         "name": "Regional Audit Office, Mymensingh (South)",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, ময়মনসিংহ (দ:)",
-        "code": "RAU46",
-        "extended_code": "RAU46",
+        "code": "470196",
+        "extended_code": "470196",
         "hrms_code": "RAU46",
         "city": null,
         "phone": null,
@@ -3255,16 +3255,16 @@
         "description": null,
         "parent_id": 59,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:24:41.000000Z"
     },
     {
         "id": 166,
         "name": "Regional Audit Office, Jamalpur",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, জামালপুর",
-        "code": "RAU47",
-        "extended_code": "RAU47",
+        "code": "520192",
+        "extended_code": "520192",
         "hrms_code": "RAU47",
         "city": null,
         "phone": null,
@@ -3275,16 +3275,16 @@
         "description": null,
         "parent_id": 59,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:26:11.000000Z"
     },
     {
         "id": 167,
         "name": "Regional Audit Office, Kishoreganj",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, কিশোরগঞ্জ",
-        "code": "RAU48",
-        "extended_code": "RAU48",
+        "code": "480192",
+        "extended_code": "480192",
         "hrms_code": "RAU48",
         "city": null,
         "phone": null,
@@ -3295,16 +3295,16 @@
         "description": null,
         "parent_id": 59,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:24:54.000000Z"
     },
     {
         "id": 168,
         "name": "Regional Audit Office, Sherpur",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, শেরপুর",
-        "code": "RAU50",
-        "extended_code": "RAU50",
+        "code": "510192",
+        "extended_code": "510192",
         "hrms_code": "RAU50",
         "city": null,
         "phone": null,
@@ -3315,16 +3315,16 @@
         "description": null,
         "parent_id": 59,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:25:56.000000Z"
     },
     {
         "id": 169,
         "name": "Regional Audit Office, Sylhet",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, সিলেট",
-        "code": "RAU51",
-        "extended_code": "RAU51",
+        "code": "360192",
+        "extended_code": "360192",
         "hrms_code": "RAU51",
         "city": null,
         "phone": null,
@@ -3335,16 +3335,16 @@
         "description": null,
         "parent_id": 60,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:14:16.000000Z"
     },
     {
         "id": 170,
         "name": "Regional Audit Office, Habiganj",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, হবিগঞ্জ",
-        "code": "RAU52",
-        "extended_code": "RAU52",
+        "code": "390192",
+        "extended_code": "390192",
         "hrms_code": "RAU52",
         "city": null,
         "phone": null,
@@ -3355,9 +3355,9 @@
         "description": null,
         "parent_id": 60,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:15:17.000000Z"
     },
     {
         "id": 171,
@@ -3383,8 +3383,8 @@
         "id": 172,
         "name": "Regional Audit Office, Sunamganj",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, সুনামগঞ্জ",
-        "code": "RAU54",
-        "extended_code": "RAU54",
+        "code": "370192",
+        "extended_code": "370192",
         "hrms_code": "RAU54",
         "city": null,
         "phone": null,
@@ -3395,16 +3395,16 @@
         "description": null,
         "parent_id": 60,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:14:33.000000Z"
     },
     {
         "id": 173,
         "name": "Regional Audit Office, Chattogram (East)",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, চট্টগ্রাম(পূর্ব)",
-        "code": "240196",
-        "extended_code": "240196",
+        "code": "290192",
+        "extended_code": "290192",
         "hrms_code": "RAU07",
         "city": null,
         "phone": null,
@@ -3417,14 +3417,14 @@
         "type": "RAO",
         "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T10:32:40.000000Z"
+        "updated_at": "2023-04-06T04:07:41.000000Z"
     },
     {
         "id": 174,
         "name": "Regional Audit Office, Rangamati",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, রাঙ্গামাটি",
-        "code": "RAU13",
-        "extended_code": "RAU13",
+        "code": "350192",
+        "extended_code": "350192",
         "hrms_code": "RAU13",
         "city": null,
         "phone": null,
@@ -3435,16 +3435,16 @@
         "description": null,
         "parent_id": 53,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:14:01.000000Z"
     },
     {
         "id": 175,
         "name": "Regional Audit Office, Narayanganj",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, নারায়নগঞ্জ",
-        "code": "RAU26",
-        "extended_code": "RAU26",
+        "code": "460192",
+        "extended_code": "460192",
         "hrms_code": "RAU26",
         "city": null,
         "phone": null,
@@ -3455,9 +3455,9 @@
         "description": null,
         "parent_id": 55,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "other_dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:24:04.000000Z"
     },
     {
         "id": 176,
@@ -3483,8 +3483,8 @@
         "id": 177,
         "name": "Regional Audit Office, Netrokona",
         "bn_name": "আঞ্চলিক নিরীক্ষা কার্যালয়, নেত্রকোনা",
-        "code": "RAU49",
-        "extended_code": "RAU49",
+        "code": "490192",
+        "extended_code": "490192",
         "hrms_code": "RAU49",
         "city": null,
         "phone": null,
@@ -3495,16 +3495,16 @@
         "description": null,
         "parent_id": 59,
         "type": "RAO",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:25:11.000000Z"
     },
     {
         "id": 178,
         "name": "Agrabad Corporate Branch, Chattogram",
         "bn_name": "আগ্রাবাদ কর্পোরেট শাখা, চট্টগ্রাম",
-        "code": "CB01",
-        "extended_code": "CB01",
+        "code": "290300",
+        "extended_code": "290300",
         "hrms_code": "CB01",
         "city": null,
         "phone": null,
@@ -3515,9 +3515,9 @@
         "description": null,
         "parent_id": 53,
         "type": "CB",
-        "resident_area": null,
+        "resident_area": "others",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:47:49.000000Z"
     },
     {
         "id": 179,
@@ -3543,8 +3543,8 @@
         "id": 180,
         "name": "Kawran Bazar Corporate Branch, Dhaka",
         "bn_name": "কাওরান বাজার কর্পোরেট শাখা, ঢাকা",
-        "code": "CB03",
-        "extended_code": "CB03",
+        "code": "410100",
+        "extended_code": "410100",
         "hrms_code": "CB03",
         "city": null,
         "phone": null,
@@ -3555,9 +3555,9 @@
         "description": null,
         "parent_id": 55,
         "type": "CB",
-        "resident_area": null,
+        "resident_area": "dhaka",
         "created_at": "2023-04-05T08:59:21.000000Z",
-        "updated_at": "2023-04-05T08:59:21.000000Z"
+        "updated_at": "2023-04-06T04:49:24.000000Z"
     },
     {
         "id": 181,
