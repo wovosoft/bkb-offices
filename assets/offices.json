@@ -7,8 +7,8 @@
         "extended_code": "010109",
         "hrms_code": "DP04",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "+8802223355872",
+        "email": "dmd03@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -17,7 +17,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T04:36:02.000000Z"
     },
     {
         "id": 2,
@@ -27,8 +27,8 @@
         "extended_code": "010110",
         "hrms_code": "DP05",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "+88029513480",
+        "email": "gm.admin@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -37,7 +37,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T04:37:51.000000Z"
     },
     {
         "id": 3,
@@ -47,8 +47,8 @@
         "extended_code": "111112",
         "hrms_code": "DP06",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "+8802223354730",
+        "email": "gm.audit@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -57,7 +57,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T04:41:06.000000Z"
     },
     {
         "id": 4,
@@ -107,17 +107,17 @@
         "extended_code": "010140",
         "hrms_code": "DP09",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "+8802223350094",
+        "email": "gm.op@krishibank.org.bd",
         "routing_no": null,
-        "address": null,
+        "address": "Bangladesh Krishi Bank, Head Office, Krishi Bank Bhaban, 83-85 Motijheel Commercial Area, Dhaka-1000.",
         "recommended_manpower": 0,
         "description": null,
         "parent_id": null,
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T04:38:59.000000Z"
     },
     {
         "id": 7,
@@ -128,36 +128,36 @@
         "hrms_code": "DP10",
         "city": null,
         "phone": null,
-        "email": null,
+        "email": "gm.recovery@krishibank.org.bd",
         "routing_no": null,
-        "address": null,
+        "address": "Bangladesh Krishi Bank, Head Office, Krishi Bank Bhaban, 83-85 Motijheel Commercial Area, Dhaka-1000",
         "recommended_manpower": 0,
         "description": null,
         "parent_id": null,
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T04:44:15.000000Z"
     },
     {
         "id": 8,
         "name": "GM Staff College's Office",
         "bn_name": "মহাব্যবস্থাপক, বিকেবি, স্টাফ কলেজ, মিরপুর, ঢাকা।",
         "code": "DP11",
-        "extended_code": "DP11",
+        "extended_code": "111196",
         "hrms_code": "DP11",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "+880248032044",
+        "email": "gmsc@krishibank.org.bd",
         "routing_no": null,
-        "address": null,
+        "address": "Bangladesh Krishi Bank, BKB Staff College, Plot No-3 Block-A, Section-13, Mirpur, Dhaka-1216",
         "recommended_manpower": 0,
         "description": null,
         "parent_id": null,
         "type": "HO",
-        "resident_area": null,
+        "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T05:22:12.000000Z"
     },
     {
         "id": 9,
@@ -388,7 +388,7 @@
         "hrms_code": "DP24",
         "city": null,
         "phone": null,
-        "email": "dgmpd3@krishibank.org.bd",
+        "email": "dgmpd4@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -397,7 +397,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T11:03:50.000000Z"
+        "updated_at": "2023-05-09T05:27:47.000000Z"
     },
     {
         "id": 21,
@@ -407,8 +407,8 @@
         "extended_code": "010113",
         "hrms_code": "DP25",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "88-02-9556911",
+        "email": "dgmpd3@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -417,7 +417,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T05:27:41.000000Z"
     },
     {
         "id": 22,
@@ -467,8 +467,8 @@
         "extended_code": "010156",
         "hrms_code": "DP30",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "88-02-9550505",
+        "email": "dgmicd@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -477,7 +477,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T05:23:36.000000Z"
     },
     {
         "id": 25,
@@ -567,8 +567,8 @@
         "extended_code": "010105",
         "hrms_code": "DP02",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "+8802223357024",
+        "email": "dmd01@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -577,7 +577,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T04:36:56.000000Z"
     },
     {
         "id": 30,
@@ -587,8 +587,8 @@
         "extended_code": "010107",
         "hrms_code": "DP03",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "+8802223380736",
+        "email": "dmd02@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -597,7 +597,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T04:36:33.000000Z"
     },
     {
         "id": 31,
@@ -607,8 +607,8 @@
         "extended_code": "010134",
         "hrms_code": "DP35",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "88-02-9551655",
+        "email": "dgmonm@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -617,7 +617,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T05:24:11.000000Z"
     },
     {
         "id": 32,
@@ -647,8 +647,8 @@
         "extended_code": "010141",
         "hrms_code": "DP37",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "88-02-9557988",
+        "email": "dgmpid@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -657,7 +657,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T05:24:33.000000Z"
     },
     {
         "id": 34,
@@ -767,8 +767,8 @@
         "extended_code": "010145",
         "hrms_code": "DP43",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "88-02-9551630",
+        "email": "dgmppd@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -777,7 +777,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T05:18:23.000000Z"
     },
     {
         "id": 40,
@@ -884,11 +884,11 @@
         "name": "GM LPO's Office",
         "bn_name": "মহাব্যবস্থাপক, স্থানীয় মুখ্য কার্যালয়",
         "code": "DP49",
-        "extended_code": "DP49",
+        "extended_code": "111191",
         "hrms_code": "DP49",
         "city": null,
         "phone": null,
-        "email": null,
+        "email": "gm.lpo@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -897,7 +897,7 @@
         "type": "HO",
         "resident_area": null,
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T05:20:04.000000Z"
     },
     {
         "id": 46,
@@ -915,9 +915,9 @@
         "description": null,
         "parent_id": null,
         "type": "HO",
-        "resident_area": null,
+        "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T05:25:57.000000Z"
     },
     {
         "id": 47,
@@ -928,16 +928,16 @@
         "hrms_code": "DP55",
         "city": null,
         "phone": null,
-        "email": "dgmpd3@krishibank.org.bd",
+        "email": "dgmpd2@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
         "description": null,
         "parent_id": null,
         "type": "HO",
-        "resident_area": null,
+        "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:19:03.000000Z"
+        "updated_at": "2023-05-09T05:27:32.000000Z"
     },
     {
         "id": 48,
@@ -967,17 +967,17 @@
         "extended_code": "111137",
         "hrms_code": "DP51",
         "city": null,
-        "phone": null,
-        "email": null,
+        "phone": "88-02-9515052",
+        "email": "dgmfex@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
         "description": null,
         "parent_id": null,
         "type": "HO",
-        "resident_area": null,
+        "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:48:28.000000Z"
+        "updated_at": "2023-05-09T05:19:06.000000Z"
     },
     {
         "id": 50,
@@ -988,7 +988,7 @@
         "hrms_code": "DP52",
         "city": null,
         "phone": null,
-        "email": null,
+        "email": "dgmlpo@krishibank.org.bd",
         "routing_no": null,
         "address": null,
         "recommended_manpower": 0,
@@ -997,7 +997,7 @@
         "type": "HO",
         "resident_area": "dhaka",
         "created_at": "2023-05-08T09:19:03.000000Z",
-        "updated_at": "2023-05-08T09:48:44.000000Z"
+        "updated_at": "2023-05-09T05:19:22.000000Z"
     },
     {
         "id": 51,
