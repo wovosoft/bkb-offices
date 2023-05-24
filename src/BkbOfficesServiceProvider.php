@@ -8,6 +8,7 @@ use Wovosoft\BkbOffices\Actions\Offices;
 use Wovosoft\BkbOffices\Actions\OfficeTypes;
 use Wovosoft\BkbOffices\Commands\ExportOffices;
 use Wovosoft\BkbOffices\Commands\ImportOffices;
+use Wovosoft\BkbOffices\Commands\UpdateSbsCode;
 
 class BkbOfficesServiceProvider extends ServiceProvider
 {
@@ -106,7 +107,8 @@ class BkbOfficesServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 ImportOffices::class,
-                ExportOffices::class
+                ExportOffices::class,
+                UpdateSbsCode::class,
             ]);
         }
     }
