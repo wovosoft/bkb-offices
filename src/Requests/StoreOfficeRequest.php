@@ -30,6 +30,7 @@ class StoreOfficeRequest extends FormRequest
             "name"                 => ["required", "string"],
             "bn_name"              => ["nullable", "string"],
             "code"                 => ["nullable", "string"],
+            "sbs_code"             => ["nullable", "digits:4"],
             "phone"                => ["nullable", "string"],
             "email"                => ["nullable", "string"],
             "extended_code"        => ["nullable", "numeric", "max_digits:6", "min_digits:6"],

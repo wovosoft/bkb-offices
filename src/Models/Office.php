@@ -17,6 +17,7 @@ use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
  * @property string $name
  * @property string|null $bn_name
  * @property string|null $code
+ * @property string|null $sbs_code
  * @property string|null $address
  * @property int|null $recommended_manpower
  * @property string|null $description
@@ -56,8 +57,8 @@ class Office extends BaseModel
     }
 
     protected $casts = [
-        "type" => OfficeTypes::class,
-        "resident_area" => ResidentAreas::class
+        "type"          => OfficeTypes::class,
+        "resident_area" => ResidentAreas::class,
     ];
 
     /**
