@@ -27,7 +27,7 @@ class Branch extends BaseModel
         "type" => OfficeTypes::Branch
     ];
 
-    protected static function booted()
+    protected static function booted(): void
     {
         static::addGlobalScope(new Branches);
     }

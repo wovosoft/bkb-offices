@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Wovosoft\BdGeocode\Models\District;
 use Wovosoft\BkbOffices\Enums\OfficeTypes;
 use Wovosoft\BkbOffices\Enums\ResidentAreas;
 use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
@@ -13,21 +14,23 @@ use Wovosoft\BkbOffices\Traits\HasOfficeTypeConditions;
 /**
  * Wovosoft\BkbOffices\Models\Office
  *
- * @property int $id
- * @property string $name
- * @property string|null $bn_name
- * @property string|null $code
- * @property string|null $sbs_code
- * @property string|null $address
- * @property int|null $recommended_manpower
- * @property string|null $description
- * @property int|null $parent_id
- * @property int|null $office_type_id
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property int                                                                                 $id
+ * @property string                                                                              $name
+ * @property string|null                                                                         $bn_name
+ * @property string|null                                                                         $code
+ * @property string|null                                                                         $sbs_code
+ * @property string|null                                                                         $ctr_branch_name
+ * @property int|null                                                                            $district_id
+ * @property string|null                                                                         $address
+ * @property int|null                                                                            $recommended_manpower
+ * @property string|null                                                                         $description
+ * @property int|null                                                                            $parent_id
+ * @property int|null                                                                            $office_type_id
+ * @property \Illuminate\Support\Carbon|null                                                     $created_at
+ * @property \Illuminate\Support\Carbon|null                                                     $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Wovosoft\BkbOffices\Models\Contact[] $contacts
- * @property-read int|null $contacts_count
- * @property-read \Wovosoft\BkbOffices\Models\OfficeType|null $type
+ * @property-read int|null                                                                       $contacts_count
+ * @property-read \Wovosoft\BkbOffices\Models\OfficeType|null                                    $type
  * @method static \Illuminate\Database\Eloquent\Builder|Office newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Office newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Office query()
@@ -88,6 +91,11 @@ class Office extends BaseModel
     public function parent(): BelongsTo
     {
         return $this->belongsTo(static::class, 'parent_id');
+    }
+
+    public function district(): BelongsTo
+    {
+        return $this->belongsTo(District::class);
     }
 }
 
