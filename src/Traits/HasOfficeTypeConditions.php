@@ -18,36 +18,36 @@ trait HasOfficeTypeConditions
 {
     public function isBranch(): Attribute
     {
-        return Attribute::get(fn() => $this->type === OfficeTypes::Branch);
+        return Attribute::get(fn(): bool => $this->type === OfficeTypes::Branch);
     }
 
     public function isCorporateBranch(): Attribute
     {
-        return Attribute::get(fn() => $this->type === OfficeTypes::CorporateBranch);
+        return Attribute::get(fn(): bool => $this->type === OfficeTypes::CorporateBranch);
     }
 
     public function isDivOffice(): Attribute
     {
-        return Attribute::get(fn() => $this->type === OfficeTypes::DivisionalOffice);
+        return Attribute::get(fn(): bool => $this->type === OfficeTypes::DivisionalOffice);
     }
 
     public function isDaoOffice(): Attribute
     {
-        return Attribute::get(fn() => $this->type === OfficeTypes::DivisionalAuditOffice);
+        return Attribute::get(fn(): bool => $this->type === OfficeTypes::DivisionalAuditOffice);
     }
 
     public function isRaoOffice(): Attribute
     {
-        return Attribute::get(fn() => $this->type === OfficeTypes::RegionalAuditOffice);
+        return Attribute::get(fn(): bool => $this->type === OfficeTypes::RegionalAuditOffice);
     }
 
     public function isCrmRmOffice(): Attribute
     {
-        return Attribute::get(fn() => $this->type === OfficeTypes::CRM_RMOffice);
+        return Attribute::get(fn(): bool => $this->type === OfficeTypes::CRM_RMOffice);
     }
 
     public function isHeadOffice(): Attribute
     {
-        return Attribute::get(fn() => $this->type === OfficeTypes::HeadOffice);
+        return Attribute::get(fn(): bool => $this->type === OfficeTypes::HeadOffice);
     }
 }
