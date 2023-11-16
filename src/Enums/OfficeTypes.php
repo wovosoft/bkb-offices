@@ -1,6 +1,9 @@
 <?php
 
 namespace Wovosoft\BkbOffices\Enums;
+
+use Wovosoft\LaravelCommon\Traits\HasEnumExtensions;
+
 /**
  * Sometimes, to quickly identify offices, we may need to use isBranch(), isDO, is DAO etc.
  * in that case enums can be a quick solution. But enums can't hold multiple attributes.
@@ -14,11 +17,13 @@ namespace Wovosoft\BkbOffices\Enums;
  */
 enum OfficeTypes: string
 {
-    case Branch = "BR";
-    case DivisionalOffice = "DO";
+    use HasEnumExtensions;
+
+    case Branch                = "BR";
+    case DivisionalOffice      = "DO";
     case DivisionalAuditOffice = "DAO";
-    case RegionalAuditOffice = "RAO";
-    case CRM_RMOffice = "RM/CRM";
-    case CorporateBranch = "CB";
-    case HeadOffice = "HO";
+    case RegionalAuditOffice   = "RAO";
+    case CRM_RMOffice          = "RM/CRM";
+    case CorporateBranch       = "CB";
+    case HeadOffice            = "HO";
 }
