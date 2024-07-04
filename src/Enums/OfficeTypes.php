@@ -20,10 +20,12 @@ enum OfficeTypes: string
     use HasEnumExtensions;
 
     case Branch                = "BR";
+    case SubBranch             = "SBR";
     case DivisionalOffice      = "DO";
     case DivisionalAuditOffice = "DAO";
     case RegionalAuditOffice   = "RAO";
     case CRM_RMOffice          = "RM/CRM";
     case CorporateBranch       = "CB";
     case HeadOffice            = "HO";
+
 }

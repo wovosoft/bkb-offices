@@ -19,4 +19,9 @@ class BaseModel extends Model
     {
         return config("bkb-offices.table_prefix");
     }
+
+    public static function tableName(): string
+    {
+        return once(fn() => (new static)->getTable());
+    }
 }

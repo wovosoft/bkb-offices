@@ -16,6 +16,11 @@ use Wovosoft\BkbOffices\Enums\OfficeTypes;
  */
 trait HasOfficeTypeConditions
 {
+    public function isSubBranch(): Attribute
+    {
+        return Attribute::get(fn(): bool => $this->type === OfficeTypes::SubBranch);
+    }
+
     public function isBranch(): Attribute
     {
         return Attribute::get(fn(): bool => $this->type === OfficeTypes::Branch);
